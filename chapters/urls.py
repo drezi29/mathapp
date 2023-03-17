@@ -1,11 +1,8 @@
 from django.urls import path
-from django.views.generic import CreateView, UpdateView, DeleteView
 from .models import Chapter
-from .views import ChapterListView
-# from .views import getAllChapters
+from .views import ChapterListView, ChapterDetailView
 
 urlpatterns = [
-    path('chapter/list',
-         ChapterListView.as_view(),
-         name='chapter-list'),
+    path('', ChapterListView.as_view(), name='chapter-list'),
+    path('chapter/<pk>/', ChapterDetailView.as_view(), name='chapter-detail')
 ]
