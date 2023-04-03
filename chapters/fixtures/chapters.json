@@ -1,0 +1,242 @@
+[
+  {
+    "model": "chapters.chapter",
+    "pk": 1,
+    "fields": {
+      "name": "Liczby rzeczywiste",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 1
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 2,
+    "fields": {
+      "name": "Język matematyki",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 2
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 3,
+    "fields": {
+      "name": "Układy równań",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 3
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 4,
+    "fields": {
+      "name": "Funkcje",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 4
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 5,
+    "fields": {
+      "name": "Funkcja liniowa",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 5
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 6,
+    "fields": {
+      "name": "Planimetria cz.1",
+      "program_class": 1,
+      "is_extended": false,
+      "order" : 6
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 7,
+    "fields": {
+      "name": "Funkcja kwadratowa",
+      "program_class": 2,
+      "is_extended": false,
+      "order" : 7
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 8,
+    "fields": {
+      "name": "Zastosowania funkcji kwadratowej",
+      "program_class": 2,
+      "is_extended": true,
+      "order" : 8
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 9,
+    "fields": {
+      "name": "Wielomiany",
+      "program_class": 2,
+      "is_extended": false,
+      "order" : 9
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 10,
+    "fields": {
+      "name": "Funkcje wymierne",
+      "program_class": 2,
+      "is_extended": false,
+      "order" : 10
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 11,
+    "fields": {
+      "name": "Trygonometria",
+      "program_class": 2,
+      "is_extended": false,
+      "order" : 11
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 12,
+    "fields": {
+      "name": "Planimetria cz.2",
+      "program_class": 2,
+      "is_extended": false,
+      "order" : 12
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 13,
+    "fields": {
+      "name": "Funkcja wykładnicza i logarytmiczna",
+      "program_class": 3,
+      "is_extended": false,
+      "order" : 13
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 14,
+    "fields": {
+      "name": "Geometria analityczna",
+      "program_class": 3,
+      "is_extended": false,
+      "order" : 14
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 15,
+    "fields": {
+      "name": "Ciągi",
+      "program_class": 3,
+      "is_extended": false,
+      "order" : 15
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 16,
+    "fields": {
+      "name": "Statystyka",
+      "program_class": 3,
+      "is_extended": false,
+      "order" : 16
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 17,
+    "fields": {
+      "name": "Funkcje trygonometryczne",
+      "program_class": 3,
+      "is_extended": true,
+      "order" : 17
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 18,
+    "fields": {
+      "name": "Granica i ciągłość funkcji",
+      "program_class": 3,
+      "is_extended": true,
+      "order" : 18
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 19,
+    "fields": {
+      "name": "Rachunek pochodnych",
+      "program_class": 3,
+      "is_extended": true,
+      "order" : 19
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 20,
+    "fields": {
+      "name": "Kombinatoryka",
+      "program_class": 4,
+      "is_extended": false,
+      "order" : 20
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 21,
+    "fields": {
+      "name": "Rachunek prawdopodobieństwa",
+      "program_class": 4,
+      "is_extended": false,
+      "order" : 21
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 22,
+    "fields": {
+      "name": "Graniastosłupy i ostrosłupy",
+      "program_class": 4,
+      "is_extended": false,
+      "order" : 22
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 23,
+    "fields": {
+      "name": "Bryły obrotowe",
+      "program_class": 4,
+      "is_extended": false,
+      "order" : 23
+    }
+  },
+  {
+    "model": "chapters.chapter",
+    "pk": 24,
+    "fields": {
+      "name": "Dowody w algebrze i geometrii",
+      "program_class": 4,
+      "is_extended": false,
+      "order" : 24
+    }
+  }
+]

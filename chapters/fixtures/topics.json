@@ -1,0 +1,142 @@
+[
+    {
+      "model": "chapters.topic",
+      "pk": 1,
+      "fields": {
+        "name": "Liczby",
+        "chapter": 1,
+        "is_extended": false,
+        "order" : 1
+      }
+    },
+    {
+        "model": "chapters.topic",
+        "pk": 2,
+        "fields": {
+          "name": "Pierwiastki i potęgi",
+          "chapter": 1,
+          "is_extended": false,
+          "order" : 2
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 3,
+        "fields": {
+          "name": "Logarytmy",
+          "chapter": 1,
+          "is_extended": false,
+          "order" : 3
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 4,
+        "fields": {
+          "name": "Zamiana podstawy logarytmów",
+          "chapter": 1,
+          "is_extended": true,
+          "order" : 4
+        }
+      },
+    {
+        "model": "chapters.topic",
+        "pk": 5,
+        "fields": {
+          "name": "Zbiory liczbowe",
+          "chapter": 2,
+          "is_extended": false,
+          "order" : 1
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 6,
+        "fields": {
+          "name": "Przedziały liczbowe",
+          "chapter": 2,
+          "is_extended": false,
+          "order" : 2
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 7,
+        "fields": {
+          "name": "Przedziały liczbowe - interpretacja graficzna",
+          "chapter": 2,
+          "is_extended": false,
+          "order" : 3
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 9,
+        "fields": {
+          "name": "Wyrażenia algebraiczne oraz przekształcenia",
+          "chapter": 2,
+          "is_extended": false,
+          "order" : 4
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 10,
+        "fields": {
+          "name": "Wzory skróconego mnożenia",
+          "chapter": 2,
+          "is_extended": false,
+          "order" : 5
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 11,
+        "fields": {
+          "name": "Rozwiązywanie równań",
+          "chapter": 3,
+          "is_extended": false,
+          "order" : 1
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 12,
+        "fields": {
+          "name": "Rozwiązywanie nierówności",
+          "chapter": 3,
+          "is_extended": false,
+          "order" : 2
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 13,
+        "fields": {
+          "name": "Wielkości wprost i odwrotnie proporcjonalne",
+          "chapter": 3,
+          "is_extended": false,
+          "order" : 3
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 14,
+        "fields": {
+          "name": "Metody rozwiązywania układów równań",
+          "chapter": 3,
+          "is_extended": false,
+          "order" : 4
+        }
+      },
+      {
+        "model": "chapters.topic",
+        "pk": 15,
+        "fields": {
+          "name": "Układy oznaczone, nieoznaczone i sprzeczne",
+          "chapter": 3,
+          "is_extended": false,
+          "order" : 5
+        }
+      }
+]
