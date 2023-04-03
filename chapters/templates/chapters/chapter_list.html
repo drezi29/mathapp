@@ -1,31 +1,39 @@
-<form method="get" action="">
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <form method="get" action="">
   {% for field in filter_form %}
     <div class="mydiv">
         <label class="mylabel">{{ field.label }}</label>
         {{ field }}
     </div>
-  {% endfor %}
-  <button type="submit">Filtruj</button>
-</form>
-
-<ul>
-  {% for class in classes_section %}
-    <li><p>Klasa {{class}}</p></li>
-    <ul>
-      {% for chapter in chapters %}
-        {% if chapter.lic_class == class %}
-          <li>
-            <div>
-              {% if chapter.is_extended %}
-                <p style="color:orange; border-style: solid; border-radius: 15px; padding: 20px; width: 16px; height: 16px; ">R</div>
-              {% else %}
-                <div style="color:blue; border-style: solid; border-radius: 15px; padding: 20px; width: 16px; height: 16px; ">P</div>
-              {% endif %}
-              <div><a href="{% url 'chapters:chapter-detail' chapter.id %}">{{ chapter.name }}</a></div>
-            </div>
-          </li>
-        {%endif%}
       {% endfor %}
-    </ul> 
-  {% endfor %}
-</ul> 
+      <button type="submit" class="btn btn-outline-primary">Filtruj</button>
+    </form>
+  </div>
+  <div class="row">
+      {% for class in classes_section %}
+      <div class=".col-12">
+        <p>Klasa {{class}}</p>
+        <ul>
+          {% for chapter in chapters %}
+            {% if chapter.program_class == class %}
+              <li>
+                <div>
+                  {% if chapter.is_extended %}
+                    <p style="color:orange; border-style: solid; border-radius: 15px; padding: 20px; width: 16px; height: 16px; ">R</div>
+                  {% else %}
+                    <div style="color:blue; border-style: solid; border-radius: 15px; padding: 20px; width: 16px; height: 16px; ">P</div>
+                  {% endif %}
+                  <div><a href="{% url 'chapters:chapter-detail' chapter.id %}">{{ chapter.name }}</a></div>
+                </div>
+              </li>
+            {%endif%}
+          {% endfor %}
+        </ul> 
+      {% endfor %}
+      </div> 
+  </div>
+</div>
+{% endblock %}

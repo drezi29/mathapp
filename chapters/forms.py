@@ -10,7 +10,7 @@ CLASSES_CHOICES = (
 class ChaptersFilterForm(forms.Form):
     classes = forms.MultipleChoiceField(choices=CLASSES_CHOICES, label="Klasy")
     # elementary_level = forms.BooleanField(required=False, label='Poziom podstawowy')
-    extended_level = forms.BooleanField(required=False, label='Pokaż rozdziały z poziomu rozszerzonego')
+    # extended_level = forms.BooleanField(required=False, label='Pokaż rozdziały z poziomu rozszerzonego')
     
     class Meta:
         model = Chapter

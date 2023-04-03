@@ -3,11 +3,12 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
 from .forms import ChaptersFilterForm
-from .models import Chapter
+from .models import Chapter, Topic
 
 
 class ChapterListView(ListView):
     model = Chapter
+    # queryset = Chapter.objects.filter(pk__in=Topic.objects.all().values_list('chapter'))
 
     def get_context_data(self, *, object_list=None, **kwargs):
         queryset = object_list if object_list is not None else self.object_list
@@ -16,13 +17,13 @@ class ChapterListView(ListView):
 
         if filter_form.is_valid():
             selected_classes = filter_form.cleaned_data.get('classes', '')
-            extended_level = filter_form.cleaned_data.get('extended_level', '')
+            # extended_level = filter_form.cleaned_data.get('extended_level', '')
 
             classes_section = list(map(lambda x : int(x), selected_classes))
             if len(selected_classes)>0:
-                queryset = queryset.filter(lic_class__in=classes_section)
-            if not(extended_level):
-                queryset = queryset.filter(is_extended=False)
+                queryset = queryset.filter(program_class__in=classes_section)
+            # if not(extended_level):
+            #     queryset = queryset.filter(is_extended=False)
 
         return super().get_context_data(
             filter_form=filter_form,
