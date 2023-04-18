@@ -1,6 +1,10 @@
+{% extends "base.html" %}
+{% block title %} {{object.name}} {% endblock %}
+{% block content %}
 <h1>{{object.name}}</h1>
 <ul>
     {% for topic in chapter.topic_set.all %}
       <li>{{topic.name}}</li>
     {% endfor %}
   </ul>
+{% endblock %}
