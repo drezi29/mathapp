@@ -45,7 +45,7 @@ class NoteElement(models.Model):
             raise ValidationError('Fill one of these field: text, file, image')
         if (self.text and (self.file or self.image)) or (self.file and (self.text or self.image)) or (self.image and (self.text or self.file)):
              raise ValidationError('Fill only one of these field: text, file, image')
-        super().save(*args, **kwargs)  # Call the "real" save() method.
+        super().save(*args, **kwargs)
 
     def __str__(self):
             return str(self.note) + ': ' + self.name
