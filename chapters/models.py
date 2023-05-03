@@ -41,7 +41,7 @@ class NoteElement(models.Model):
     order = models.IntegerField(blank=False)
 
     def save(self, *args, **kwargs):
-        if not self.text and not self.file and not self.image:
+        if (not self.text) and (not self.file) and (not self.image):
             raise ValidationError('Fill one of these field: text, file, image')
         if (self.text and (self.file or self.image)) or (self.file and (self.text or self.image)) or (self.image and (self.text or self.file)):
              raise ValidationError('Fill only one of these field: text, file, image')
