@@ -29,7 +29,7 @@ class Note(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
     def __str__(self):
-        return 'Notatka ' + self.topic.name
+        return  f"{self.topic.name} - notatka"
 
 class NoteElement(models.Model):
     note = models.ForeignKey(Note, on_delete=models.CASCADE)

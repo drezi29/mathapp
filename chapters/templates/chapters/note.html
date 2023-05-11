@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} {{note}} {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <p>Notatka</p>
+                {% for element in note_elements %}
+                    <div>
+                        {% if element.text %}
+                            {{element.text}}
+                        {% endif %}
+                        {% if element.image %}
+                        <img src="{{ element.image.url }}" alt="img">
+                        {% endif %}
+                        <div class="my-5">
+                            {% if element.file %}
+                            <video width="640px" height="360px" controls>
+                                 <source src="{{ element.file.url }}" type="video/mp4">
+                            </video>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
+{% endblock %}
