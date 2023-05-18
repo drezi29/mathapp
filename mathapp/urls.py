@@ -21,5 +21,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chapters/', include(('chapters.urls', 'chapters'), namespace='chapters')),
+    path('quizzes/', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
     path('_nested_admin/', include('nested_admin.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

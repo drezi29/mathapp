@@ -3,22 +3,19 @@ from django.contrib import admin
 from .models import Answer, Question, Quiz
 
 
-class AnswerInline(nested_admin.NestedTabularInline):
+class AnswerInline(nested_admin.NestedStackedInline):
     model = Answer
-    # sortable_field_name = "answer_content"
 
 
-class QuestionInline(nested_admin.NestedTabularInline):
-    model = Question
-    inlines = [AnswerInline,]
-    sortable_field_name = "question_content"
+class QuestionAdmin(nested_admin.NestedModelAdmin):
+    inlines = [AnswerInline]
 
 
-class QuizAdmin(nested_admin.NestedModelAdmin):
-    inlines = [QuestionInline,]
+admin.site.register(Question, QuestionAdmin)
+
+
+class QuizAdmin(admin.ModelAdmin):
+    list_display = ['id', 'chapter']
 
 
 admin.site.register(Quiz, QuizAdmin)
-
-
-
