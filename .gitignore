@@ -7,3 +7,5 @@ db.sqlite3
 /uploads
 /chapters/migrations
 /chapters/migrations/__pycache__
+/quizzes/migrations
+/quizzes/migrations/__pycache__
