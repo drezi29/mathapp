@@ -1,5 +1,4 @@
 from django.urls import path
-from .models import Chapter
 from .views import ChapterListView, ChapterDetailView, NoteView
 
 urlpatterns = [
