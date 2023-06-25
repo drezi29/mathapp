@@ -2,10 +2,9 @@
 *~
 __pycache__
 db.sqlite3
-/static
+/static/admin
+/static/nested_admin
 .DS_Store
 /uploads
-/chapters/migrations
 /chapters/migrations/__pycache__
-/quizzes/migrations
 /quizzes/migrations/__pycache__
