@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
+from landing_page import views as landing_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chapters/', include(('chapters.urls', 'chapters'), namespace='chapters')),
     path('quizzes/', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
     path('_nested_admin/', include('nested_admin.urls')),
+    path('', landing_views.testing, name='home_page'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
