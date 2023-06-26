@@ -96,7 +96,7 @@ a:hover {
 }
 
 .blue-text {
-    color: #4B4EF7;
+    color: #4B4EF7!important;
     font-weight: 600;
 }
 
@@ -156,4 +156,28 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px #FE7062;
     border: #FE7062;
+}
+
+.badge {
+    padding: 6px;
+    font-size: 80%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0.25rem;
+    opacity: 90%;
+}
+
+.register_form input {
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-color: lightgray;
+    width: 60%;
+    padding: 5px;
+    /*height: 120%;*/
+}
+
+.register_form label {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
