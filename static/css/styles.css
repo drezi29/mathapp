@@ -148,6 +148,7 @@ a:hover {
     border-color: #4B4EF7;
     border-radius: 6px;
     color:white;
+    transform-origin: left top;
 }
 
 .btn-primary:hover {
@@ -174,10 +175,15 @@ a:hover {
     border-color: lightgray;
     width: 60%;
     padding: 5px;
-    /*height: 120%;*/
 }
 
 .register_form label {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+}
+
+.button-box {
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
 }
