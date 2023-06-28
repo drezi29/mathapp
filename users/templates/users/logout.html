@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} Zaloguj się {% endblock %}
+{% block content %}
+<div>
+    <div class="container">
+        <div class="row mt-5 align-items-center">
+            <div class="col-md-6">
+                {% load static %}
+                <img src="{% static 'images/logout.png' %}" width="90%"  alt="Obrazek przedstawiający grupę ludzi bawiącą się na plaży">
+            </div>
+            <div class="col-md-6" style="text-align: center;">
+                <div class="content-section ml-md-5" >
+                    <h2 class="mb-2">Nastąpiło <a class="blue-text">poprawne</a> wylogowanie!</h2>
+                    <div class="mt-2">
+                        <small class="text-muted"><a href="{% url 'login' %}">Zaloguj się ponownie!</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
