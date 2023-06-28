@@ -19,10 +19,12 @@
         <div class="row">
             <div class="col-12 short-desc-home-page">
                 <p>Skorzystaj z +MathApp już dziś!</p>
+                {% if not user.is_authenticated %}
                 <div class="mt-3">
                     <a href="{% url 'register' %}" class="button btn btn-primary ml-2">Dołącz</a>
                     <a href="{% url 'login' %}" class="button btn btn-primary ml-2">Zaloguj się</a>
                 </div>
+                {% endif %}
             </div>
         </div>
         <div class="row">
