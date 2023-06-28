@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'css/styles.css'%}">
     </head>
     <body>
+    <div class="d-flex flex-column min-vh-100">
         <nav class="navbar navbar-expand-xl navbar-custom">
             <a class="navbar-brand" href="{% url 'home_page' %}" >+MathApp</a>
             <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,14 +49,15 @@
                 </div>
             <div>
         </nav>
-    <div>
+    <main class="flex-fill">
     {% block content %}
     {% endblock %}
-    </div>
-    <footer class="page-footer font-small blue mt-5">
-    <div class="footer-copyright text-center py-3">© 2023 Copyright:<a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
-    </div>
+    </main>
+    <footer class="footer font-small blue mt-5">
+        <div class="footer-copyright text-center py-3">© 2023 Copyright:<a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
+        </div>
     </footer>
+    </div>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
