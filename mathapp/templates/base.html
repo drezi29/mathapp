@@ -57,6 +57,31 @@
         <div class="footer-copyright text-center py-3">© 2023 Copyright:<a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
         </div>
     </footer>
+    <div class="modal fade" id="contentForAuthenticatedUsersModal" tabindex="-1" role="dialog" aria-labelledby="contentForAuthenticatedUsersModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Treść niedostępna</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Dostęp do tych materiałów posiadają tylko zalogowani użytkownicy
+      </div>
+      <div class="container modal-footer">
+        <div class="button-box row" style="text-align: center;">
+            <div class="col-6" style="text-align: right;">
+                <a href="{% url 'login' %}" class="button btn btn-primary ml-2">Zaloguj się</a>
+            </div>
+            <div class="col-6" style="text-align: left;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
