@@ -1,12 +1,13 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 from .chapter import Chapter
 
 
 class Topic(models.Model):
-    name = models.CharField(max_length=128, blank=False)
-    chapter = models.ForeignKey(Chapter, on_delete=models.CASCADE)
-    is_extended = models.BooleanField()
-    order = models.IntegerField(blank=False)
+    name = models.CharField(max_length=128, blank=False, verbose_name=_('name'))
+    chapter = models.ForeignKey(Chapter, on_delete=models.CASCADE, verbose_name=_('chapter'))
+    is_extended = models.BooleanField(verbose_name=_('is extended'))
+    order = models.IntegerField(blank=False, verbose_name=_('order'))
 
     def __str__(self):
         return f"{self.name} - {str(self.chapter.name)}"
@@ -16,3 +17,5 @@ class Topic(models.Model):
             fields=['chapter', 'order'],
             name='unique_order_for_topics_in_chapter')
         ]
+        verbose_name = _('topic')
+        verbose_name_plural = _('topics')

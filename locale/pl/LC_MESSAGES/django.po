@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-02 21:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: .\chapters\apps.py:7
+msgid "Chapters"
+msgstr "Rozdziały"
+
+#: .\chapters\models\chapter.py:6 .\chapters\models\note_element.py:9
+#: .\chapters\models\topic.py:7
+msgid "name"
+msgstr "nazwa"
+
+#: .\chapters\models\chapter.py:7
+msgid "class"
+msgstr "klasa"
+
+#: .\chapters\models\chapter.py:8 .\chapters\models\topic.py:9
+msgid "is extended"
+msgstr "poziom rozszerzony"
+
+#: .\chapters\models\chapter.py:9 .\chapters\models\note_element.py:14
+#: .\chapters\models\topic.py:10
+msgid "order"
+msgstr "kolejność"
+
+#: .\chapters\models\chapter.py:19 .\chapters\models\topic.py:8
+#: .\quizzes\models.py:6
+msgid "chapter"
+msgstr "rozdział"
+
+#: .\chapters\models\chapter.py:20
+msgid "chapters"
+msgstr "rozdziały"
+
+#: .\chapters\models\note.py:7 .\chapters\models\topic.py:20
+msgid "topic"
+msgstr "temat"
+
+#: .\chapters\models\note.py:13 .\chapters\models\note_element.py:8
+msgid "note"
+msgstr "notatka"
+
+#: .\chapters\models\note.py:14
+msgid "notes"
+msgstr "notatki"
+
+#: .\chapters\models\note_element.py:10
+msgid "description"
+msgstr "opis"
+
+#: .\chapters\models\note_element.py:11
+msgid "text"
+msgstr "tekst"
+
+#: .\chapters\models\note_element.py:12
+msgid "file"
+msgstr "plik"
+
+#: .\chapters\models\note_element.py:13
+msgid "image"
+msgstr "obraz"
+
+#: .\chapters\models\note_element.py:31
+msgid "note element"
+msgstr "element notatki"
+
+#: .\chapters\models\note_element.py:32
+msgid "note elements"
+msgstr "elementy notatki"
+
+#: .\chapters\models\topic.py:21
+msgid "topics"
+msgstr "tematy"
+
+#: .\mathapp\settings.py:113
+msgid "Polish"
+msgstr "Polski"
+
+#: .\mathapp\settings.py:114
+msgid "English"
+msgstr "Angielski"
+
+#: .\quizzes\apps.py:7 .\quizzes\models.py:10
+msgid "Quizzes"
+msgstr "Quizy"
+
+#: .\quizzes\models.py:9
+#, fuzzy
+#| msgid "Quizzes"
+msgid "Quiz"
+msgstr "Quizy"
+
+#: .\quizzes\models.py:17
+msgid "quiz"
+msgstr "quiz"
+
+#: .\quizzes\models.py:18
+msgid "question content"
+msgstr "treść pytania"
+
+#: .\quizzes\models.py:24
+msgid "Question"
+msgstr "Pytanie"
+
+#: .\quizzes\models.py:25
+msgid "Questions"
+msgstr "Pytania"
+
+#: .\quizzes\models.py:29
+msgid "question"
+msgstr "pytanie"
+
+#: .\quizzes\models.py:30
+msgid "answer content"
+msgstr "treść odpowiedzi"
+
+#: .\quizzes\models.py:31
+msgid "is correct"
+msgstr "czy poprawna"
+
+#: .\quizzes\models.py:37 .\quizzes\models.py:38
+msgid "Answer"
+msgstr "Odpowiedź"
