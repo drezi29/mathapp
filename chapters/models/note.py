@@ -4,10 +4,11 @@ from .topic import Topic
 
 
 class Note(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, verbose_name=_('topic'))
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, verbose_name=_('topic'),
+                              help_text=_('The topic to which the note is linked'))
 
     def __str__(self):
-        return f"{self.topic.name} - notatka"
+        return f"{self.topic.name}: note"
 
     class Meta:
         verbose_name = _('note')
