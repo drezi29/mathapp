@@ -1,8 +1,7 @@
 from django import forms
-import nested_admin
 from django.contrib import admin
 from django.core.exceptions import ValidationError
-from .models import Chapter, NoteElement, Note, Topic 
+from .models import Chapter, Topic
 
 
 class ChapterAdmin(admin.ModelAdmin):
@@ -17,21 +16,3 @@ class TopicAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Topic, TopicAdmin)
-
-
-class NoteElementAdmin(admin.ModelAdmin):
-    list_display = ['note', 'name', 'order']
-
-
-admin.site.register(NoteElement, NoteElementAdmin)
-
-
-class NoteElementInline(nested_admin.NestedStackedInline):
-    model = NoteElement
-    sortable_field_name = "name"
-
-
-class NoteAdmin(nested_admin.NestedModelAdmin):
-    inlines = [NoteElementInline]
-
-admin.site.register(Note, NoteAdmin)

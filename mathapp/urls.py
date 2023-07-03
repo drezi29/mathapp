@@ -24,6 +24,7 @@ from users import views as users_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chapters/', include(('chapters.urls', 'chapters'), namespace='chapters')),
+    path('notes/', include(('notes.urls', 'notes'), namespace='notes')),
     path('quizzes/', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
     path('_nested_admin/', include('nested_admin.urls')),
     path('', landing_views.landing_page, name='home_page'),

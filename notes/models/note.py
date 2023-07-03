@@ -1,10 +1,9 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from .topic import Topic
 
 
 class Note(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, verbose_name=_('topic'),
+    topic = models.ForeignKey('chapters.Topic', on_delete=models.CASCADE, verbose_name=_('topic'),
                               help_text=_('The topic to which the note is linked'))
 
     def __str__(self):

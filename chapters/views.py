@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.views import View
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from .models import Chapter, Note
+from .models import Chapter
 
 
 class ChapterListView(ListView):
@@ -19,10 +19,3 @@ class ChapterListView(ListView):
 
 class ChapterDetailView(DetailView):
     model = Chapter
-
-
-class NoteView(View):
-    def get(self, request, pk):
-        note = Note.objects.get(topic=pk)
-        note_elements = note.noteelement_set.all()
-        return render(request, 'chapters/note.html', {"note_elements": note_elements, "note": note})
