@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 21:27+0200\n"
+"POT-Creation-Date: 2023-07-04 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
-"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
-"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 #: .\chapters\apps.py:7
 msgid "Chapters"
 msgstr "Rozdziały"
 
-#: .\chapters\models\chapter.py:6 .\chapters\models\note_element.py:10
-#: .\chapters\models\topic.py:7
+#: .\chapters\models\chapter.py:6 .\chapters\models\topic.py:7
+#: .\notes\models\note_element.py:10
 msgid "name"
 msgstr "nazwa"
 
@@ -39,19 +38,18 @@ msgstr "poziom rozszerzony"
 
 #: .\chapters\models\chapter.py:9 .\chapters\models\topic.py:11
 msgid "Should be checked if chapter belongs to the extended level"
-msgstr "Pole powinno być zaznaczone jeśli rozdział należy do zakresu rozszerzonego"
+msgstr "Pole powinno być zaznaczone jeśli rozdział realizowany jest w ramach poziomu rozszerzonego"
 
-#: .\chapters\models\chapter.py:10 .\chapters\models\note_element.py:21
-#: .\chapters\models\topic.py:12
+#: .\chapters\models\chapter.py:10 .\chapters\models\topic.py:12
+#: .\notes\models\note_element.py:20
 msgid "order"
 msgstr "kolejność"
 
 #: .\chapters\models\chapter.py:11
 msgid "The value determines the order of chapters in table of content"
-msgstr "Wartość wyznacza kolejność rozdziału w spisie treści"
+msgstr "Wartość określa kolejność rozdziału w spisie rozdziałów"
 
 #: .\chapters\models\chapter.py:21 .\chapters\models\topic.py:8
-#: .\quizzes\models.py:6
 msgid "chapter"
 msgstr "rozdział"
 
@@ -59,120 +57,122 @@ msgstr "rozdział"
 msgid "chapters"
 msgstr "rozdziały"
 
-#: .\chapters\models\note.py:7 .\chapters\models\topic.py:23
-msgid "topic"
-msgstr "temat"
-
-#: .\chapters\models\note.py:8
-msgid "The topic to which the note is linked"
-msgstr "Temat, z którym notatka jest powiązana"
-
-#: .\chapters\models\note.py:14 .\chapters\models\note_element.py:8
-msgid "note"
-msgstr "notatka"
-
-#: .\chapters\models\note.py:15
-msgid "notes"
-msgstr "notatki"
-
-#: .\chapters\models\note_element.py:9
-msgid "The note to which the note element is linked"
-msgstr "Notatka, z którą element jest powiązany"
-
-#: .\chapters\models\note_element.py:11
-msgid "Resource title for the administrator purpose of management"
-msgstr "Tytuł zasobu dla administratora w celu łatwiejszego zarządzania treściami"
-
-#: .\chapters\models\note_element.py:13
-msgid "description"
-msgstr "opis"
-
-#: .\chapters\models\note_element.py:14
-msgid ""
-"Title that can be placed below content on the template to describe content"
-msgstr "Tytuł zasobu, który może posłużyć jako podpis zasobu w widoku notatki"
-
-#: .\chapters\models\note_element.py:15
-msgid "text"
-msgstr "tekst"
-
-#: .\chapters\models\note_element.py:16
-msgid "Fill in the field if the note is textual"
-msgstr "Wypełnij pole jeśli notatka jest tekstowa"
-
-#: .\chapters\models\note_element.py:17
-msgid "file"
-msgstr "plik"
-
-#: .\chapters\models\note_element.py:18
-msgid "Fill in the field if the note is a video"
-msgstr "Wypełnij pole jeśli notatka jest zasobem w postaci filmu"
-
-#: .\chapters\models\note_element.py:19
-msgid "image"
-msgstr "obraz"
-
-#: .\chapters\models\note_element.py:20
-msgid "Fill in the field if the note is an image"
-msgstr "Wypełnij pole jeśli notatka jest zasobem w postaci obrazka"
-
-#: .\chapters\models\note_element.py:22
-msgid "Order of elements in the note view"
-msgstr "Kolejność elementu w widoku notatki"
-
-#: .\chapters\models\note_element.py:26
-msgid "Fill one of these field: text, file, image"
-msgstr "Wypełnij jedno z tych pól: tekst, plik, obraz"
-
-#: .\chapters\models\note_element.py:28
-msgid "Fill only one of these field: text, file, image"
-msgstr "Wypełnij tylko jedno z tych pól: tekst, plik, obraz"
-
-#: .\chapters\models\note_element.py:39
-msgid "note element"
-msgstr "element notatki"
-
-#: .\chapters\models\note_element.py:40
-msgid "note elements"
-msgstr "elementy notatki"
-
 #: .\chapters\models\topic.py:9
 msgid "The chapter to which the topic is linked"
 msgstr "Rozdział, z którym temat jest powiązany"
 
 #: .\chapters\models\topic.py:13
 msgid "The value determines the order of topics in chapter's table of content"
-msgstr "Wartość wyznacza kolejność tematu w spisie treści rozdziału"
+msgstr "Wartość określa kolejność tematu w spisie tematów danego rozdziału"
+
+#: .\chapters\models\topic.py:23 .\notes\models\note.py:6 .\quizzes\models.py:6
+msgid "topic"
+msgstr "temat"
 
 #: .\chapters\models\topic.py:24
 msgid "topics"
 msgstr "tematy"
 
-#: .\mathapp\settings.py:113
+#: .\mathapp\settings.py:114
 msgid "Polish"
 msgstr "Polski"
 
-#: .\mathapp\settings.py:114
+#: .\mathapp\settings.py:115
 msgid "English"
 msgstr "Angielski"
+
+#: .\notes\apps.py:8
+msgid "Notes"
+msgstr "Notatki"
+
+#: .\notes\models\note.py:7
+msgid "The topic to which the note is linked"
+msgstr "Temat, z którym notatka jest powiązana"
+
+#: .\notes\models\note.py:13 .\notes\models\note_element.py:8
+msgid "note"
+msgstr "notatka"
+
+#: .\notes\models\note.py:14
+msgid "notes"
+msgstr "notatki"
+
+#: .\notes\models\note_element.py:9
+msgid "The note to which the note element is linked"
+msgstr "Notatka, z którą element notatki jest powiązany"
+
+#: .\notes\models\note_element.py:11
+msgid "Resource title for the administrator purpose of management"
+msgstr "Tytuł zasobu nadawany w celach łatwiejszego zarządzania w panelu admina"
+
+#: .\notes\models\note_element.py:12
+msgid "description"
+msgstr "opis"
+
+#: .\notes\models\note_element.py:13
+msgid ""
+"Title that can be placed below content on the template to describe content"
+msgstr "Tytuł elementu, który może stanowić podpis elementu w notatce. Jeśli nie chcesz, aby element był zatytułowany na stronie, zostaw to pole puste"
+
+#: .\notes\models\note_element.py:14
+msgid "text"
+msgstr "tekst"
+
+#: .\notes\models\note_element.py:15
+msgid "Fill in the field if the note is textual"
+msgstr "Wypełnij to pole jeśli element notatki jest tekstowy"
+
+#: .\notes\models\note_element.py:16
+msgid "file"
+msgstr "plik"
+
+#: .\notes\models\note_element.py:17
+msgid "Fill in the field if the note is a video"
+msgstr "Wypełnij to pole jeśli element notatki jest plikiem video"
+
+#: .\notes\models\note_element.py:18
+msgid "image"
+msgstr "obraz"
+
+#: .\notes\models\note_element.py:19
+msgid "Fill in the field if the note is an image"
+msgstr "Wypełnij to pole jeśli element notatki jest obrazem"
+
+#: .\notes\models\note_element.py:21
+msgid "Order of elements in the note view"
+msgstr "Kolejność elementu w widoku notatki"
+
+#: .\notes\models\note_element.py:25
+msgid "Fill one of these field: text, file, image"
+msgstr "Wypełnij jedno z tych pól: tekst, plik, obraz"
+
+#: .\notes\models\note_element.py:27
+msgid "Fill only one of these field: text, file, image"
+msgstr "Wypełnij tylko jedno z tych pól: tekst, plik, obraz"
+
+#: .\notes\models\note_element.py:38
+msgid "note element"
+msgstr "element notatki"
+
+#: .\notes\models\note_element.py:39
+msgid "note elements"
+msgstr "elementy notatki"
 
 #: .\quizzes\apps.py:7 .\quizzes\models.py:11
 msgid "Quizzes"
 msgstr "Quizy"
 
 #: .\quizzes\models.py:7
-msgid "The chapter to which the quiz is linked"
-msgstr "Rozdział, z którym quiz jest powiązany"
+msgid "The topic to which the quiz is linked"
+msgstr "Temat, z którym quiz jest powiązany"
 
 #: .\quizzes\models.py:10
-#, fuzzy
-#| msgid "Quizzes"
 msgid "Quiz"
-msgstr "Quizy"
+msgstr ""
 
 #: .\quizzes\models.py:18
 msgid "quiz"
-msgstr "quiz"
+msgstr ""
 
 #: .\quizzes\models.py:19
 msgid "The quiz to which the question is linked"
@@ -208,7 +208,7 @@ msgstr "czy poprawna"
 
 #: .\quizzes\models.py:35
 msgid "Should be checked if the answer is correct for the question"
-msgstr "Pole powinno być zaznaczone jeśli odpowiedź jest poprawną odpowiedzią dla tego pytania"
+msgstr "Pole powinno być zaznaczone jeśli odpowiedź jest prawidłową odpowiedzią na pytanie"
 
 #: .\quizzes\models.py:41 .\quizzes\models.py:42
 msgid "Answer"
