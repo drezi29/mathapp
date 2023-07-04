@@ -3,8 +3,8 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Quiz(models.Model):
-    chapter = models.OneToOneField('chapters.Chapter', on_delete=models.SET_NULL, null=True, verbose_name=_('chapter'),
-                                   help_text=_('The chapter to which the quiz is linked'))
+    chapter = models.OneToOneField('chapters.Topic', on_delete=models.SET_NULL, null=True, verbose_name=_('topic'),
+                                   help_text=_('The topic to which the quiz is linked'))
 
     class Meta:
         verbose_name = _('Quiz')
@@ -20,7 +20,7 @@ class Question(models.Model):
     question_content = models.TextField(verbose_name=_('question content'))
 
     def __str__(self):
-        return self.question_content
+        return f"{self.question_content}: {self.quiz}"
 
     class Meta:
         verbose_name = _('Question')
