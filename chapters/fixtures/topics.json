@@ -1,142 +1,1022 @@
 [
-    {
-      "model": "chapters.topic",
-      "pk": 1,
-      "fields": {
-        "name": "Liczby",
-        "chapter": 1,
-        "is_extended": false,
-        "order" : 1
-      }
-    },
-    {
-        "model": "chapters.topic",
-        "pk": 2,
-        "fields": {
-          "name": "Pierwiastki i potęgi",
-          "chapter": 1,
-          "is_extended": false,
-          "order" : 2
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 3,
-        "fields": {
-          "name": "Logarytmy",
-          "chapter": 1,
-          "is_extended": false,
-          "order" : 3
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 4,
-        "fields": {
-          "name": "Zamiana podstawy logarytmów",
-          "chapter": 1,
-          "is_extended": true,
-          "order" : 4
-        }
-      },
-    {
-        "model": "chapters.topic",
-        "pk": 5,
-        "fields": {
-          "name": "Zbiory liczbowe",
-          "chapter": 2,
-          "is_extended": false,
-          "order" : 1
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 6,
-        "fields": {
-          "name": "Przedziały liczbowe",
-          "chapter": 2,
-          "is_extended": false,
-          "order" : 2
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 7,
-        "fields": {
-          "name": "Przedziały liczbowe - interpretacja graficzna",
-          "chapter": 2,
-          "is_extended": false,
-          "order" : 3
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 9,
-        "fields": {
-          "name": "Wyrażenia algebraiczne oraz przekształcenia",
-          "chapter": 2,
-          "is_extended": false,
-          "order" : 4
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 10,
-        "fields": {
-          "name": "Wzory skróconego mnożenia",
-          "chapter": 2,
-          "is_extended": false,
-          "order" : 5
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 11,
-        "fields": {
-          "name": "Rozwiązywanie równań",
-          "chapter": 3,
-          "is_extended": false,
-          "order" : 1
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 12,
-        "fields": {
-          "name": "Rozwiązywanie nierówności",
-          "chapter": 3,
-          "is_extended": false,
-          "order" : 2
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 13,
-        "fields": {
-          "name": "Wielkości wprost i odwrotnie proporcjonalne",
-          "chapter": 3,
-          "is_extended": false,
-          "order" : 3
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 14,
-        "fields": {
-          "name": "Metody rozwiązywania układów równań",
-          "chapter": 3,
-          "is_extended": false,
-          "order" : 4
-        }
-      },
-      {
-        "model": "chapters.topic",
-        "pk": 15,
-        "fields": {
-          "name": "Układy oznaczone, nieoznaczone i sprzeczne",
-          "chapter": 3,
-          "is_extended": false,
-          "order" : 5
-        }
-      }
+  {
+  "model": "chapters.topic",
+  "pk": 1,
+  "fields": {
+    "name": "Liczby",
+    "chapter": 1,
+    "is_extended": false,
+    "order" : 1
+    }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 2,
+  "fields": {
+  "name": "Pierwiastki i potęgi",
+  "chapter": 1,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 3,
+  "fields": {
+  "name": "Logarytmy",
+  "chapter": 1,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 4,
+  "fields": {
+  "name": "Zamiana podstawy logarytmów",
+  "chapter": 1,
+  "is_extended": true,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 5,
+  "fields": {
+  "name": "Zbiory liczbowe",
+  "chapter": 2,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 6,
+  "fields": {
+  "name": "Przedziały liczbowe",
+  "chapter": 2,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 7,
+  "fields": {
+  "name": "Przedziały liczbowe - interpretacja graficzna",
+  "chapter": 2,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 8,
+  "fields": {
+  "name": "Wyrażenia algebraiczne oraz przekształcenia",
+  "chapter": 2,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 9,
+  "fields": {
+  "name": "Wzory skróconego mnożenia",
+  "chapter": 2,
+  "is_extended": false,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 10,
+  "fields": {
+  "name": "Rozwiązywanie równań",
+  "chapter": 3,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 11,
+  "fields": {
+  "name": "Rozwiązywanie nierówności",
+  "chapter": 3,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 12,
+  "fields": {
+  "name": "Wielkości wprost i odwrotnie proporcjonalne",
+  "chapter": 3,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 13,
+  "fields": {
+  "name": "Metody rozwiązywania układów równań",
+  "chapter": 3,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 14,
+  "fields": {
+  "name": "Układy oznaczone, nieoznaczone i sprzeczne",
+  "chapter": 3,
+  "is_extended": false,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 15,
+  "fields": {
+  "name": "Definicja funkcji oraz wyznaczanie wartości funkcji",
+  "chapter": 4,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 16,
+  "fields": {
+  "name": "Właściwości funkcji",
+  "chapter": 4,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 17,
+  "fields": {
+  "name": "Szkicowanie wykresów funkcji",
+  "chapter": 4,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 18,
+  "fields": {
+  "name": "Złożenia funkcji",
+  "chapter": 4,
+  "is_extended": true,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 19,
+  "fields": {
+  "name": "Dowodzenie monotoniczności funkcji",
+  "chapter": 4,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 20,
+  "fields": {
+  "name": "Wykres i wzór funckji liniowej",
+  "chapter": 5,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 21,
+  "fields": {
+  "name": "Własności funkcji liniowej",
+  "chapter": 5,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 22,
+  "fields": {
+  "name": "Funkcja liniowa - rozwiązywanie zadań z parametrem",
+  "chapter": 5,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 23,
+  "fields": {
+  "name": "Kąty w trójkątach i czworokątach",
+  "chapter": 6,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 24,
+  "fields": {
+  "name": "Własności trójkątów",
+  "chapter": 6,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 25,
+  "fields": {
+  "name": "Własności czworokątów",
+  "chapter": 6,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 26,
+  "fields": {
+  "name": "Twierdzenie Pitagorasa oraz twierdzenie odwrotne",
+  "chapter": 6,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 27,
+  "fields": {
+  "name": "Pojęcie funkcji kwadratowej",
+  "chapter": 7,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 28,
+  "fields": {
+  "name": "Wzór funkcji kwadratowej w postaci ogólnej, kanonicznej oraz iloczynowej",
+  "chapter": 7,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 29,
+  "fields": {
+  "name": "Równania kwadratowe",
+  "chapter": 7,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 30,
+  "fields": {
+  "name": "Wyróżnik równania kwadratowego",
+  "chapter": 7,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 31,
+  "fields": {
+  "name": "Wzory Viete'a",
+  "chapter": 7,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 32,
+  "fields": {
+  "name": "Nierówności kwadratowe",
+  "chapter": 7,
+  "is_extended": false,
+  "order" : 6
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 33,
+  "fields": {
+  "name": "Równania i nierówności z parametrem",
+  "chapter": 7,
+  "is_extended": true,
+  "order" : 7
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 34,
+  "fields": {
+  "name": "Przykłady wielomianów i rozkład na czynniki",
+  "chapter": 9,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 35,
+  "fields": {
+  "name": "Równania wielomianowe",
+  "chapter": 9,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 36,
+  "fields": {
+  "name": "Dzielenie wielomianów",
+  "chapter": 9,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 37,
+  "fields": {
+  "name": "Twierdzenie Bézouta",
+  "chapter": 9,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 38,
+  "fields": {
+  "name": "Funkcje wielomianowe",
+  "chapter": 10,
+  "is_extended": true,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 39,
+  "fields": {
+  "name": "Nierówności wielomianowe",
+  "chapter": 10,
+  "is_extended": true,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 40,
+  "fields": {
+  "name": "Funkcja wykładnicza i logarytmiczna",
+  "chapter": 10,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 41,
+  "fields": {
+  "name": "Równania wykładnicze i logarytmiczne",
+  "chapter": 10,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 42,
+  "fields": {
+  "name": "Sinus, cosinus, tangens",
+  "chapter": 11,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 43,
+  "fields": {
+  "name": "Obliczenia trygonometryczne",
+  "chapter": 11,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 44,
+  "fields": {
+  "name": "Wartości funkcji trygonometrycznych dla kątów 30, 45 oraz 60 stopni",
+  "chapter": 11,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 45,
+  "fields": {
+  "name": "Funkcje trygonometryczne kątów od 0 do 180 stopni",
+  "chapter": 11,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 46,
+  "fields": {
+  "name": "Twierdzenie sinusów oraz twierdzenie cosinusów",
+  "chapter": 11,
+  "is_extended": false,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 47,
+  "fields": {
+  "name": "Pole koła i długość okręgu",
+  "chapter": 12,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 48,
+  "fields": {
+  "name": "Kąty środkowe i wpisane oraz ich własności",
+  "chapter": 12,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 49,
+  "fields": {
+  "name": "Proste i okręgi",
+  "chapter": 12,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 50,
+  "fields": {
+  "name": "Okrąg opisany na trójkącie i wpisany w trójkąt",
+  "chapter": 12,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 51,
+  "fields": {
+  "name": "Okrąg opisany na wielokącie i wpisany w wielokąt",
+  "chapter": 12,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 52,
+  "fields": {
+  "name": "Wielokąty",
+  "chapter": 12,
+  "is_extended": false,
+  "order" : 6
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 53,
+  "fields": {
+  "name": "Punkty i odcinki w układzie współrzędnych",
+  "chapter": 14,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 54,
+  "fields": {
+  "name": "Równanie prostej",
+  "chapter": 14,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 55,
+  "fields": {
+  "name": "Równanie okręgu",
+  "chapter": 14,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 56,
+  "fields": {
+  "name": "Ciąg arytmetyczny",
+  "chapter": 15,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 57,
+  "fields": {
+  "name": "Ciąg geometryczny",
+  "chapter": 15,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 58,
+  "fields": {
+  "name": "Procent prosty i procent składany",
+  "chapter": 15,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 59,
+  "fields": {
+  "name": "Średnia arytmetyczna i ważona",
+  "chapter": 16,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 60,
+  "fields": {
+  "name": "Mediana i dominanta",
+  "chapter": 16,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 61,
+  "fields": {
+  "name": "Odchylenie standardowe",
+  "chapter": 16,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 62,
+  "fields": {
+  "name": "Funkcje trygonometryczne kąta ostrego",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 63,
+  "fields": {
+  "name": "Kąty o miarach dodatnich i ujemnych",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 64,
+  "fields": {
+  "name": "Funkcje trygonometryczne dowolnego kąta",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 65,
+  "fields": {
+  "name": "Wykres funkcji y=sin(α)",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 66,
+  "fields": {
+  "name": "Wykres funkcji y=cos(α)",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 67,
+  "fields": {
+  "name": "Wykres funkcji y=tg(α)",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 6
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 68,
+  "fields": {
+  "name": "Wzory redukcyjne",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 7
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 69,
+  "fields": {
+  "name": "Miara łukowa kąta",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 8
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 70,
+  "fields": {
+  "name": "Równania i nierówności trygonometryczne",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 9
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 71,
+  "fields": {
+  "name": "Sinus, cosinus, tangens sumy i różnicy kątów",
+  "chapter": 17,
+  "is_extended": true,
+  "order" : 10
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 72,
+  "fields": {
+  "name": "Granice funkcji",
+  "chapter": 18,
+  "is_extended": true,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 73,
+  "fields": {
+  "name": "Funkcje ciągłe",
+  "chapter": 18,
+  "is_extended": true,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 74,
+  "fields": {
+  "name": "Twierdzenie Darboux",
+  "chapter": 18,
+  "is_extended": true,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 75,
+  "fields": {
+  "name": "Twierdzenie Darboux",
+  "chapter": 18,
+  "is_extended": true,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 76,
+  "fields": {
+  "name": "Obliczanie granic",
+  "chapter": 18,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 77,
+  "fields": {
+  "name": "Pochodna funkcji w punkcie",
+  "chapter": 19,
+  "is_extended": true,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 78,
+  "fields": {
+  "name": "Pochodna funkcji złożonej",
+  "chapter": 19,
+  "is_extended": true,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 79,
+  "fields": {
+  "name": "Ekstrema",
+  "chapter": 19,
+  "is_extended": true,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 80,
+  "fields": {
+  "name": "Podstawowe pojęcia z zakresu prawdopodobieństwa",
+  "chapter": 21,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 81,
+  "fields": {
+  "name": "Wartość oczekiwana",
+  "chapter": 21,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 82,
+  "fields": {
+  "name": "Zasada mnożenia i dodawania",
+  "chapter": 21,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 83,
+  "fields": {
+  "name": "Obliczanie prawdopodobieństwa",
+  "chapter": 21,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 84,
+  "fields": {
+  "name": "Wariacje oraz kombinacje",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 85,
+  "fields": {
+  "name": "Dwumian Newtona",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 6
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 86,
+  "fields": {
+  "name": "Suma i iloczyn zdarzeń",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 7
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 87,
+  "fields": {
+  "name": "Prawdopodobieństwo warunkowe i całkowite",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 8
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 88,
+  "fields": {
+  "name": "Zdarzenia niezależne",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 9
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 89,
+  "fields": {
+  "name": "Schemat Bernoulliego",
+  "chapter": 21,
+  "is_extended": true,
+  "order" : 10
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 90,
+  "fields": {
+  "name": "Graniastosłupy",
+  "chapter": 22,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 91,
+  "fields": {
+  "name": "Ostrosłupy",
+  "chapter": 22,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 92,
+  "fields": {
+  "name": "Walec",
+  "chapter": 22,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 93,
+  "fields": {
+  "name": "Stożek",
+  "chapter": 22,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 94,
+  "fields": {
+  "name": "Kula",
+  "chapter": 22,
+  "is_extended": false,
+  "order" : 5
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 95,
+  "fields": {
+  "name": "Figury przestrzenna",
+  "chapter": 23,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 96,
+  "fields": {
+  "name": "Figury obrotowe",
+  "chapter": 23,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 97,
+  "fields": {
+  "name": "Proste i płaszczyzny w przestrzeni",
+  "chapter": 23,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 98,
+  "fields": {
+  "name": "Przekroje graniastosłupów",
+  "chapter": 23,
+  "is_extended": false,
+  "order" : 4
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 99,
+  "fields": {
+  "name": "Twierdzenie Talesa i twierdzenie odwrotne",
+  "chapter": 20,
+  "is_extended": false,
+  "order" : 1
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 100,
+  "fields": {
+  "name": "Wielokąty podobne",
+  "chapter": 20,
+  "is_extended": false,
+  "order" : 2
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 101,
+  "fields": {
+  "name": "Cechy podobieństwa trójkątów",
+  "chapter": 20,
+  "is_extended": false,
+  "order" : 3
+  }
+  },
+  {
+  "model": "chapters.topic",
+  "pk": 102,
+  "fields": {
+  "name": "Pola figur podobnych",
+  "chapter": 20,
+  "is_extended": false,
+  "order" : 4
+  }
+  }
 ]

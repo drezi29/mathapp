@@ -71,16 +71,6 @@
   },
   {
     "model": "chapters.chapter",
-    "pk": 8,
-    "fields": {
-      "name": "Zastosowania funkcji kwadratowej",
-      "program_class": 2,
-      "is_extended": true,
-      "order" : 8
-    }
-  },
-  {
-    "model": "chapters.chapter",
     "pk": 9,
     "fields": {
       "name": "Wielomiany",
@@ -117,16 +107,6 @@
       "program_class": 2,
       "is_extended": false,
       "order" : 12
-    }
-  },
-  {
-    "model": "chapters.chapter",
-    "pk": 13,
-    "fields": {
-      "name": "Funkcja wykładnicza i logarytmiczna",
-      "program_class": 3,
-      "is_extended": false,
-      "order" : 13
     }
   },
   {
@@ -193,7 +173,7 @@
     "model": "chapters.chapter",
     "pk": 20,
     "fields": {
-      "name": "Kombinatoryka",
+      "name": "Figury podobne",
       "program_class": 4,
       "is_extended": false,
       "order" : 20
@@ -227,16 +207,6 @@
       "program_class": 4,
       "is_extended": false,
       "order" : 23
-    }
-  },
-  {
-    "model": "chapters.chapter",
-    "pk": 24,
-    "fields": {
-      "name": "Dowody w algebrze i geometrii",
-      "program_class": 4,
-      "is_extended": false,
-      "order" : 24
     }
   }
 ]
