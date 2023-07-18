@@ -32,9 +32,6 @@
                     <li class="nav-item mr-xl-4">
                         <a class="nav-link" href="{% url 'chapters:chapter-list' %}">O projekcie</a>
                     </li>
-                    <li class="nav-item mr-xl-4">
-                        <a class="nav-link" href="{% url 'credits' %}">Licencje</a>
-                    </li>
                 </ul>
                 <div class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
@@ -53,8 +50,12 @@
     {% block content %}
     {% endblock %}
     </main>
-    <footer class="footer font-small blue mt-5">
-        <div class="footer-copyright text-center py-3">© 2023 Copyright:<a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
+    <footer class="footer font-small mt-5">
+        <div class="footer-copyright text-center pt-3">© 2023 Copyright:
+            <a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
+        </div>
+        <div class="text-center pb-3">
+            <a class="nav-link" style="color: #150A81; font-weight: 400; font-size: 15px;" href="{% url 'credits' %}">Licencje</a>
         </div>
     </footer>
     <div class="modal fade" id="contentForAuthenticatedUsersModal" tabindex="-1" role="dialog" aria-labelledby="contentForAuthenticatedUsersModalLabel" aria-hidden="true">
