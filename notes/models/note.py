@@ -7,7 +7,7 @@ class Note(models.Model):
                               help_text=_('The topic to which the note is linked'))
 
     def __str__(self):
-        return f"{self.topic.name}: note"
+        return f"{self.topic.name}: notatka"
 
     class Meta:
         verbose_name = _('note')
