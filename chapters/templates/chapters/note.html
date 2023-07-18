@@ -3,12 +3,15 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center mt-5">
-                <p>Notatka</p>
+            <div class="col-12 mt-5 mx-4 mx-sm-5">
                 {% for element in note_elements %}
                     <div>
+                        <div class="text-left mb-3 blue-text">
+                            <h2>{{ element.name }}</h2>
+                        </div>
+                        <div class="text-left p-sm-3 mx-sm-5">
                         {% if element.text %}
-                            {{element.text}}
+                            {{element.text|safe}}
                         {% endif %}
                         {% if element.image %}
                         <img src="{{ element.image.url }}" alt="img">
@@ -19,6 +22,7 @@
                                  <source src="{{ element.file.url }}" type="video/mp4">
                             </video>
                             {% endif %}
+                        </div>
                         </div>
                     </div>
                 {% endfor%}

@@ -1,0 +1,32 @@
+[
+  {
+    "model": "notes.NoteElement",
+    "pk": 1,
+    "fields": {
+      "note": 2,
+      "name": "Definicja potęgowania",
+      "text": "<p>Operację potęgowania poznałaś lub poznałeś już w szkole podstawowej. Przypomnijmy szybko, czym jest potęga.</p>\n\n<p><i>Potęgą liczby a o wykładniku naturalnym n nazywamy taki iloczyn n czynników, z których każdy jest równy liczbie a. </i></p>\n\n<p>Mówiąc prościej - <b>liczbę a mnożymy przez siebie samą n razy</b>.</p>\n<br/>\n\\(a^n = \\underbrace{a \\cdot a \\cdot \\ldots \\cdot a}_{\\textrm{$n$ razy}} \\)\n<br/>\ngdzie \\(n \\in \\mathbb{Z_{+}}\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "notes.NoteElement",
+    "pk": 2,
+    "fields": {
+      "note": 2,
+      "name": "Definicja pierwiastka",
+      "text": "<p>Liczbę a nazywamy <b>podstawą potęgi</b>, zaś n - <b> wykładnikiem potęgi</b>.</p>\n<br>\n<p>\nZ kolei pierwiastkiem arytmetycznym \\(\\sqrt[n]{a} \\) stopnia n z liczby \\(a \\geq 0 \\)  nazywamy liczbę \\(b \\geq 0 \\)  taką, że \\(b^n = a\\). </p>\n\n<p> Mówiąc innymi słowami - obliczając pierwiastek n-tego stopnia, szukamy takiej liczby b, która podniesiona do n-tej potęgi da liczbę a. </p>\n\n<p>Dla każdej liczby rzeczywistej prawdziwa jest równość: </p>\n<p> \\(\\sqrt{a^2} = |a|\\).\n\n<br>\n<p>Jeśli a jest liczbą ujemną, a n - nieparzystą, wtedy \\(\\sqrt[n]{a}\\) oznacza ujemną liczbę b, taką że \\(b^n = a\\). <br> Oznacza to, że dla liczb nieujemnych także możemy obliczać pierwiastki - jednak tylko nieparzystych stopni. (W zbiorze liczb rzeczywistych pierwiastki stopni parzystych z liczb ujemnych nie istnieją).</p>",
+      "order": 2
+    }
+  },
+  {
+    "model": "notes.NoteElement",
+    "pk": 3,
+    "fields": {
+      "note": 2,
+      "name": "Ważne właściwości",
+      "text": "<p>Dla potęgi i pierwiastków warto zapamiętać następujące właściwości: </p>\n\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\(a^0 = 1\\) <br> dla \\(a \\neq 0 \\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\(a^{-n} = \\frac{1}{a^n}\\) <br> dla \\(a \\neq 0 \\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\(a^ \\frac{m}{n} \\) = \\(\\sqrt[n]{a^m}\\) <br> dla \\(a \\geq 0 \\) oraz \\(m,n \\in \\mathbb{Z_{+}}\\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\(a^\\frac{-m}{n} \\) = \\(\\frac{1}{\\sqrt[n]{a^m}}\\) <br> dla \\(a > 0 \\) oraz \\(m,n \\in \\mathbb{Z_{+}}\\)</p></div>\n</div>\n</div>\n\n<br>\n<p>Ponadto dla rzeczywistych r, s oraz dodatnich a oraz b obowiązują następujące właściwości:</p>\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\(a^r \\cdot a^s = a^{r+s} \\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\((a^r)^s = a^{r \\cdot s} \\) </p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\( \\frac{a^r}{a^s} = a^{r-s} \\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\( (a \\cdot b)^r = a^r \\cdot b^r \\)</p></div>\n<div class=\"col-xs-12 col-lg-5 formula-tile\"><p>\\( (\\frac{a}{b})^r = \\frac{a^r}{b^r} \\) </p></div>\n</div>\n</div>\n<br>\n<p>Jeśli r, s są całkowite, to powyższe wzory obowiązują dla wszystkich liczb a oraz b, które są różne od zera.</p>",
+      "order": 3
+    }
+  }
+]
