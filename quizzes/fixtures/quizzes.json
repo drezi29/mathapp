@@ -1,0 +1,30 @@
+[
+  {
+    "model": "quizzes.quiz",
+    "pk": 1,
+    "fields": {
+      "topic": 1
+    }
+  },
+  {
+    "model": "quizzes.quiz",
+    "pk": 2,
+    "fields": {
+      "topic": 2
+    }
+  },
+  {
+    "model": "quizzes.quiz",
+    "pk": 3,
+    "fields": {
+      "topic": 3
+    }
+  },
+  {
+    "model": "quizzes.quiz",
+    "pk": 4,
+    "fields": {
+      "topic": 4
+    }
+  }
+]

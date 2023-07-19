@@ -1,0 +1,362 @@
+[
+  {
+    "model": "quizzes.answer",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "answer_content": "\\(4^{24}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "answer_content": "\\(4^{20}\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "answer_content": "\\(4^{56}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "answer_content": "\\(4^{24}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "answer_content": "\\(2^{18}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "answer_content": "\\(2^{\\frac{11}{7}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 7,
+    "fields": {
+      "question": 2,
+      "answer_content": "\\(16\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 8,
+    "fields": {
+      "question": 2,
+      "answer_content": "\\(2^{-4}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "answer_content": "\\(4^4\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "answer_content": "\\(\\sqrt{2}+\\sqrt{8})^4\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "answer_content": "\\({16}^4\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 12,
+    "fields": {
+      "question": 3,
+      "answer_content": "\\(64\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 13,
+    "fields": {
+      "question": 4,
+      "answer_content": "\\(15^9\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 14,
+    "fields": {
+      "question": 4,
+      "answer_content": "\\(9\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 15,
+    "fields": {
+      "question": 4,
+      "answer_content": "\\(3^9\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 16,
+    "fields": {
+      "question": 4,
+      "answer_content": "\\(6^9\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 17,
+    "fields": {
+      "question": 5,
+      "answer_content": "\\(3^{\\frac{16}{8}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 18,
+    "fields": {
+      "question": 5,
+      "answer_content": "\\(3^{\\frac{1}{16}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 19,
+    "fields": {
+      "question": 5,
+      "answer_content": "\\(81\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 20,
+    "fields": {
+      "question": 5,
+      "answer_content": "\\(27\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 21,
+    "fields": {
+      "question": 6,
+      "answer_content": "\\(1\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 22,
+    "fields": {
+      "question": 6,
+      "answer_content": "\\(0\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 23,
+    "fields": {
+      "question": 6,
+      "answer_content": "\\(-1\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 24,
+    "fields": {
+      "question": 6,
+      "answer_content": "\\(\\sqrt{3}+5\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 25,
+    "fields": {
+      "question": 7,
+      "answer_content": "\\(\\frac{1}{10000}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 26,
+    "fields": {
+      "question": 7,
+      "answer_content": "\\(0.01\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 27,
+    "fields": {
+      "question": 7,
+      "answer_content": "\\(0.001\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 28,
+    "fields": {
+      "question": 7,
+      "answer_content": "\\(0.0001\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 29,
+    "fields": {
+      "question": 8,
+      "answer_content": "\\(\\sqrt{15}^2\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 30,
+    "fields": {
+      "question": 8,
+      "answer_content": "\\(\\sqrt{15}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 31,
+    "fields": {
+      "question": 8,
+      "answer_content": "\\(\\{15}^2\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 32,
+    "fields": {
+      "question": 8,
+      "answer_content": "\\(\\sqrt{3}+\\sqrt{5}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 33,
+    "fields": {
+      "question": 9,
+      "answer_content": "\\(2.5}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 34,
+    "fields": {
+      "question": 9,
+      "answer_content": "\\(0.5\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 35,
+    "fields": {
+      "question": 9,
+      "answer_content": "\\(\\sqrt{25}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 36,
+    "fields": {
+      "question": 9,
+      "answer_content": "\\(\\sqrt{2.5}\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 37,
+    "fields": {
+      "question": 10,
+      "answer_content": "\\(2^{\\frac{1}{2}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 38,
+    "fields": {
+      "question": 10,
+      "answer_content": "\\(4^{\\frac{1}{2}\\)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 39,
+    "fields": {
+      "question": 10,
+      "answer_content": "\\(8\\sqrt{2}\\)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quizzes.answer",
+    "pk": 40,
+    "fields": {
+      "question": 10,
+      "answer_content": "\\(2^2\\)",
+      "is_correct": false
+    }
+  }
+]
