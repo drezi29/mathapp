@@ -22,7 +22,7 @@ admin.site.register(Question, QuestionAdmin)
 
 
 class QuizAdmin(admin.ModelAdmin):
-    list_display = ['id', 'chapter']
+    list_display = ['id', 'topic']
 
 
 admin.site.register(Quiz, QuizAdmin)
