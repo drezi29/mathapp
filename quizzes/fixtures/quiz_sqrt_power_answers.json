@@ -85,7 +85,7 @@
     "pk": 10,
     "fields": {
       "question": 3,
-      "answer_content": "\\(\\sqrt{2}+\\sqrt{8})^4\\)",
+      "answer_content": "\\((\\sqrt{2}+\\sqrt{8})^4\\)",
       "is_correct": false
     }
   },
