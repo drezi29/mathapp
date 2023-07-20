@@ -213,3 +213,39 @@ a:hover {
     box-shadow: 4px 4px #FE7062;
     border: #FE7062;
 }
+
+.formula-sidepanel {
+    height: 70%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 64px;
+    right: 0;
+    background-color: #4B4EF7;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+    border-radius: 6px;
+    padding-bottom: 30px;
+}
+
+.formula-sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.formula-sidepanel a:hover {
+    color: #FE7062;
+}
+
+.formula-sidepanel .closebtn {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    }
