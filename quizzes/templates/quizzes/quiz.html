@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block title %} Test - {{topic.name}} {% endblock %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-        <h1 class="blue-text">{{topic.name}}</h1>
-            <div class="col-md-12 mx-3" style="font-size: 20px">
+    <div class="container" style="margin: 0 0 0 0!important; max-width: 100%;">
+        <div class="row ml-5">
+            <div class="mt-3"><h1 class="blue-text">{{topic.name}}</h1></div>
+        </div>
+        <div class="row ml-5">
+            <div class="col-md-7" style="font-size: 20px">
             <form method='post' action=''>
                 {% csrf_token %}
                 {% for question in question_list %}
@@ -27,6 +29,9 @@
                 {% endfor %}
                 <button type="submit" class="btn btn-primary mt-2">Zakończ test</button>
             </form>
+            </div>
+            <div class="col-md-5 d-none d-md-flex">
+                {% include "formula_card.html" %}
             </div>
         </div>
     </div>

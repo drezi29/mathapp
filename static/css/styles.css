@@ -219,11 +219,11 @@ a:hover {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 64px;
+    top: 70px;
     right: 0;
     background-color: #4B4EF7;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 30px;
     transition: 0.3s;
     border-radius: 6px;
     padding-bottom: 30px;
@@ -238,7 +238,8 @@ a:hover {
   transition: 0.2s;
 }
 
-.formula-sidepanel a:hover {
+.formula-sidepanel a:hover,
+.button-side:hover {
     color: #FE7062;
 }
 
@@ -249,3 +250,18 @@ a:hover {
     right: 15px;
     font-size: 30px;
     }
+
+.button-side {
+    color: white;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 71px;
+    right: 0;
+    background-color: #4B4EF7;
+    border-width: 0px;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
