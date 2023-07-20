@@ -43,58 +43,58 @@
                 </div>
             <div>
         </nav>
-    <main class="flex-fill">
-    {% block content %}
-    {% endblock %}
-    </main>
-    <footer class="footer font-small mt-5">
-        <div class="text-center pt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3">
-                        <ul class="list-unstyled ">
-                            <li><a class="nav-link" style="color: #150A81; font-weight: 400; font-size: 15px;" href="{% url 'credits' %}">Licencje</a></li>
-                        </ul>
+        <main class="flex-fill">
+        {% block content %}
+        {% endblock %}
+        </main>
+        <footer class="footer font-small mt-5">
+            <div class="text-center pt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <ul class="list-unstyled ">
+                                <li><a class="nav-link" style="color: #150A81; font-weight: 400; font-size: 15px;" href="{% url 'credits' %}">Licencje</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="list-unstyled">
+                                <li><a class="nav-link" style="color: #150A81; font-weight: 400; font-size: 15px;" href="#">O projekcie</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3"></div>
                     </div>
-                    <div class="col-3">
-                        <ul class="list-unstyled">
-                            <li><a class="nav-link" style="color: #150A81; font-weight: 400; font-size: 15px;" href="#">O projekcie</a></li>
-                        </ul>
+                </div>
+            </div>
+            <div class="footer-copyright text-center pb-3">© 2023 Copyright:
+                <a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
+            </div>
+        </footer>
+        <div class="modal fade" id="contentForAuthenticatedUsersModal" tabindex="-1" role="dialog" aria-labelledby="contentForAuthenticatedUsersModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Treść niedostępna</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                         </button>
                     </div>
-                    <div class="col-3"></div>
+                    <div class="modal-body">
+                        Dostęp do tych materiałów posiadają tylko zalogowani użytkownicy
+                    </div>
+                    <div class="container modal-footer">
+                        <div class="button-box row" style="text-align: center;">
+                            <div class="col-6" style="text-align: right;">
+                                <a href="{% url 'login' %}" class="button btn btn-primary ml-2">Zaloguj się</a>
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright text-center pb-3">© 2023 Copyright:
-            <a style="font-weight: 600;" href="{% url 'home_page' %}"> MathApp</a>
-        </div>
-    </footer>
-    <div class="modal fade" id="contentForAuthenticatedUsersModal" tabindex="-1" role="dialog" aria-labelledby="contentForAuthenticatedUsersModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Treść niedostępna</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          Dostęp do tych materiałów posiadają tylko zalogowani użytkownicy
-      </div>
-      <div class="container modal-footer">
-        <div class="button-box row" style="text-align: center;">
-            <div class="col-6" style="text-align: right;">
-                <a href="{% url 'login' %}" class="button btn btn-primary ml-2">Zaloguj się</a>
-            </div>
-            <div class="col-6" style="text-align: left;">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     </div>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
