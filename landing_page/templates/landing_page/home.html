@@ -31,6 +31,14 @@
                         </div>
                     </div>
                 </div>
+                {% else %}
+                    <div class="mt-3 container">
+                    <div class="button-box row">
+                        <div class="col-12" style="text-align: center;">
+                            <a href="{% url 'chapters:chapter-list' %}" class="button btn btn-primary ml-2">Rozpocznij naukę!</a>
+                        </div>
+                    </div>
+                </div>
                 {% endif %}
             </div>
         </div>
