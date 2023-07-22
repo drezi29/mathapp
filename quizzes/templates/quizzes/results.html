@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} Wynik - {{topic.name}} {% endblock %}
+{% block content %}
+{% load static %}
+<div>
+    <div class="container">
+        <div class="row align-items-center d-md-none">
+            <div class="col-12 text-center">
+                <img src="{% static 'images/test-stars.png' %}" width="60%"  alt="Obrazek przedstawiający ekran monitora z kartką papieru oraz osobę trzymającą gwiazdkę">
+            </div>
+            <div class="col-12 text-center">
+                <h2>Twój wynik to <a class="blue-text">{{ score }} / {{ questions_amount }}</a></h2>
+                {% if score != questions_amount %}
+                    <p>Poniżej znajdziesz odpowiedzi na błędnie rozwiązane zadania.</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row align-items-center d-none d-md-flex">
+            <div class="col-md-6">
+                <img src="{% static 'images/test-stars.png' %}" width="80%"  alt="Obrazek przedstawiający ekran monitora z kartką papieru oraz osobę trzymającą gwiazdkę">
+            </div>
+            <div class="col-md-6 text-left">
+                <h2>Twój wynik to <a class="blue-text">{{ score }} / {{ questions_amount }}</a></h2>
+                {% if score != questions_amount %}
+                    <p>Poniżej znajdziesz odpowiedzi na błędnie rozwiązane zadania.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

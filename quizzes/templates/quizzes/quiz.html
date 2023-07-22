@@ -7,30 +7,18 @@
         </div>
         <div class="row ml-5">
             <div class="col-md-7" style="font-size: 20px">
-            <form method='post' action=''>
-                {% csrf_token %}
-                {% for question in question_list %}
-                <div class="form-group">
-                  <label for="question"><a class="mr-2 blue-text">Pytanie {{ forloop.counter }}:</a> {{question.question_content}}</label>
-                </div>
-                {% for answer in answers %}
-                    {% if answer.question.id == question.id %}
-                        <div class="form-check mt-1">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="{{q.question}}" id="gridRadios{{ answer.id }}">
-                                <label class="form-check-label" for="gridRadios{{ answer.id }}">
-                                    {{answer.answer_content}}
-                                </label>
-                            </div>
+                <form action="" method="post">	{% csrf_token %}
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="fieldWrapper">
+                            {{ field.errors }}
+                            <a class="mr-2 blue-text">Pytanie {{ forloop.counter }}</a>{{ field.label_tag }} {{ field }}
                         </div>
-                    {% endif %}
-                {% endfor %}
-                    <div class="mb-5"></div>
-                {% endfor %}
-            <div class="button-box">
-                <button type="submit" class="btn btn-primary mt-2">Zakończ test</button>
-            </div>
-            </form>
+                    {% endfor %}
+                    <div class="button-box">
+                        <input class="btn btn-primary mt-2" type="submit" value="Zakończ test">
+                    </div>
+                </form>
             </div>
             <div class="col-md-5 d-none d-md-flex">
                 {% include "formula_card.html" %}
