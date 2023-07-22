@@ -27,6 +27,17 @@
                     </div>
                 {% endfor%}
             </div>
+            <div class="col-12 mt-3">
+                <div class="button-box row">
+                        <div class="col-6" style="text-align: right;">
+                            <a href="{% url 'register' %}" class="button btn btn-primary ml-2">Zadania związane z tematem</a>
+                        </div>
+                        <div class="col-6" style="text-align: left;">
+                            <a href="{% url 'quizzes:quiz-start' topic_id %}" class="button btn btn-primary ml-2">Test wiedzy z tematu</a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 {% endblock %}
