@@ -11,7 +11,17 @@
             <div class="col-12 text-center">
                 <h2>Twój wynik to <a class="blue-text">{{ score }} / {{ questions_amount }}</a></h2>
                 {% if score != questions_amount %}
-                    <p>Poniżej znajdziesz odpowiedzi na błędnie rozwiązane zadania.</p>
+                    <p>Poniżej znajdują się poprawne odpowiedzi na błędnie rozwiązane zadania.</p>
+                    <table class="ml-5">
+                    {% for question, correct_answer in incorrect_responses %}
+                        <tr>
+                            <td><div class="my-2">- {{ question }}</div></td>
+                            <td><div class="blue-text ml-5">{{ correct_answer }}</div><td>
+                        </tr>
+                    {% endfor %}
+                    </table>
+                    {% else %}
+                    <h5>100% to piękny wynik! <a class="blue-text">Gratulacje!</a></h5>
                 {% endif %}
             </div>
         </div>
@@ -22,7 +32,17 @@
             <div class="col-md-6 text-left">
                 <h2>Twój wynik to <a class="blue-text">{{ score }} / {{ questions_amount }}</a></h2>
                 {% if score != questions_amount %}
-                    <p>Poniżej znajdziesz odpowiedzi na błędnie rozwiązane zadania.</p>
+                    <p>Poniżej znajdują się poprawne odpowiedzi na błędnie rozwiązane zadania.</p>
+                    <table>
+                    {% for question, correct_answer in incorrect_responses %}
+                        <tr>
+                            <td><div class="my-2">- {{ question }}</div></td>
+                            <td><div class="blue-text ml-5">{{ correct_answer }}</div><td>
+                        </tr>
+                    {% endfor %}
+                    </table>
+                    {% else %}
+                    <h5>100% to piękny wynik! <a class="blue-text">Gratulacje!</a></h5>
                 {% endif %}
             </div>
         </div>

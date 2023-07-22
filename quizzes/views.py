@@ -10,7 +10,8 @@ from .models import Quiz
 def quiz_result(request):
     score = request.session['score']
     questions_amount = request.session['questions_amount']
-    return render(request, 'quizzes/results.html', {'score': score, 'questions_amount': questions_amount})
+    incorrect_responses = request.session['incorrect_responses']
+    return render(request, 'quizzes/results.html', {'score': score, 'questions_amount': questions_amount, 'incorrect_responses': incorrect_responses.items()})
 
 
 def render_quiz(request, pk):
@@ -20,13 +21,24 @@ def render_quiz(request, pk):
     if request.method == 'POST':
         post_data = request.POST
         score_counter = 0
+        incorrect_responses = {}
         for question in quiz.question_set.all():
             answers = question.answer_set.all()
+            answered_correctly = False
+            answer_content = ''
             for answer in answers:
-                if answer.id == int(post_data[str(question.id)]) and answer.is_correct:
-                    score_counter += 1
+                answered_correctly = False
+                if answer.is_correct:
+                    answer_content = answer.answer_content
+                    if answer.id == int(post_data[str(question.id)]):
+                        score_counter += 1
+                        answered_correctly = True
+                        break
+            if not answered_correctly:
+                incorrect_responses[question.question_content] = answer_content
         request.session['score'] = score_counter
         request.session['questions_amount'] = len(quiz.question_set.all())
+        request.session['incorrect_responses'] = incorrect_responses
         return redirect('/quiz/result')
     return render(request, 'quizzes/quiz.html', {'topic': topic, 'form': form})
 
