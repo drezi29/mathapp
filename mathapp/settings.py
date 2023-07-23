@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'nested_admin',
     'chapters',
+    'exercises',
     'landing_page',
     'notes',
     'quizzes',
