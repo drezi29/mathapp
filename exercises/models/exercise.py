@@ -11,10 +11,16 @@ class Exercise(models.Model):
                              help_text=_('Title visible as exercise title in exercises list'))
     is_extended = models.BooleanField(verbose_name=_('is extended'),
                                       help_text=_('Should be checked if exercise belongs to the extended level'))
+    order = models.IntegerField(blank=False, unique=True, default=0, verbose_name=_('order'),
+                                help_text=_('The value determines the order of exercise in exercises\' list view'))
 
     def __str__(self):
         return f"{self.title}: {self.topic.name}"
 
     class Meta:
+        constraints = [models.UniqueConstraint(
+            fields=['topic', 'order'],
+            name='unique_order_for_exercise_in_topic')
+        ]
         verbose_name = _('exercise')
         verbose_name_plural = _('exercises')
