@@ -10,7 +10,9 @@ class NoteElement(models.Model):
     name = models.CharField(max_length=128, blank=True, null=True, verbose_name=_('name'),
                             help_text=_('Resource title for the administrator purpose of management'))
     description = models.CharField(max_length=255, blank=True, null=True, verbose_name=_('description'),
-        help_text=_('Title that can be placed below content on the template to describe content'),)
+                                   help_text=_(
+                                       'Title that can be placed below content on the template to describe content')
+                                   )
     text = models.TextField(blank=True, null=True, verbose_name=_('text'),
                             help_text=_('Fill in the field if the note is textual'))
     file = models.FileField(upload_to='uploads/', blank=True, null=True, verbose_name=_('file'),
