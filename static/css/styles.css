@@ -89,10 +89,14 @@ a:hover {
     text-decoration: none;
 }
 
-.topic-name p {
+.topic-name {
     font-weight: 600;
     font-size:18px;
     color: #150A81;
+}
+
+.topic-name:hover {
+    color: #FE7062;
 }
 
 .blue-text {
