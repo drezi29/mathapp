@@ -25,6 +25,7 @@ from quizzes import views as quiz_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chapters/', include(('chapters.urls', 'chapters'), namespace='chapters')),
+    path('exercises/', include(('exercises.urls', 'exercises'), namespace='exercises')),
     path('notes/', include(('notes.urls', 'notes'), namespace='notes')),
     path('quizzes/', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
     path('_nested_admin/', include('nested_admin.urls')),
