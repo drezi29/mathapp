@@ -11,7 +11,7 @@ class Step(models.Model):
     instruction = models.TextField(verbose_name=_('instruction'), help_text=_('Describe the instruction for step'))
     solution = models.TextField(verbose_name=_('instruction'), help_text=_('Solution for step visible as hint'),
                                 default=None)
-    order = models.IntegerField(blank=False, unique=True, verbose_name=_('order'),
+    order = models.IntegerField(blank=False, verbose_name=_('order'),
                                 help_text=_('The value determines the order of step in exercise\'s view'))
 
     def __str__(self):
