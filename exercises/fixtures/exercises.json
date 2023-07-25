@@ -1,0 +1,46 @@
+[
+  {
+    "model": "exercises.exercise",
+    "pk": 1,
+    "fields": {
+      "topic": 2,
+      "exercise_content": "Ile wynosi iloczyn \\(9^4 \\cdot 81^2\\)? Wynik przedstaw w postaci potęgi o podstawie 3.",
+      "title": "Obliczanie wartości iloczynu \\(9^4 \\cdot 81^2\\)",
+      "is_extended": false,
+      "order": 1
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 2,
+    "fields": {
+      "topic": 2,
+      "exercise_content": "Ile wynosi iloczyn \\(7^{\\frac{4}{3}} \\cdot \\sqrt[3]{7^5}\\)?",
+      "title": "Obliczanie wartości wyrażenia \\(7^{\\frac{4}{3}} \\cdot \\sqrt[3]{7^5}\\)",
+      "is_extended": false,
+      "order": 2
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 3,
+    "fields": {
+      "topic": 2,
+      "exercise_content": "Ile wynosi wartość wyrażenia \\(2\\sqrt{50} - 4\\sqrt{8}\\) zapisane w postaci potęgi liczby 2?",
+      "title": "Przekształcanie wyrażenia \\(2\\sqrt{50} - 4\\sqrt{8}\\)",
+      "is_extended": false,
+      "order": 3
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 4,
+    "fields": {
+      "topic": 2,
+      "exercise_content": "Uszereguj malejąco następujące liczby A=\\((5^4)^3\\), B=\\(5^5\\)+\\(5^5\\), C=\\(5^{12}\\):\\(5^7\\), D=\\(5^3 \\cdot 5^6\\).",
+      "title": "Szeregowanie liczb wyrażonych jako potęgi liczby \\(5\\)",
+      "is_extended": false,
+      "order": 4
+    }
+  }
+]

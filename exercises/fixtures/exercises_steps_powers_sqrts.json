@@ -1,0 +1,156 @@
+[
+  {
+    "model": "exercises.step",
+    "pk": 1,
+    "fields": {
+      "exercise": 1,
+      "title": "Przedstawienie liczby 9 jako potęga 3",
+      "instruction": "Aby wykonać mnożenie potęg liczby muszą być przedstawione jako potęgi o wspólnej podstawie lub wspólnym wykładniku.<br> W naszym rozwiązaniu przedstawimy obie składowe jako potęgi liczby 3. <br> Zacznijmy od przedstawienia \\(9^4\\) jako potęgi o podstawie 3.",
+      "solution": "\\(9^4 = (3^2)^4 = 3^8\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 2,
+    "fields": {
+      "exercise": 1,
+      "title": "Przedstawienie liczby 81 jako potęga 3",
+      "instruction": "Teraz przedstawimy liczbę 81 w postaci potęgi liczby 3.",
+      "solution": "\\(81^2 = (9^2)^2 = ((3^2)^2)^2 = (3^4)^2 = 3^8\\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 3,
+    "fields": {
+      "exercise": 1,
+      "title": "Wykonanie mnożenia",
+      "instruction": "Wykonanie poprzednich kroków pozwoliło na uzyskanie wyrażenia w postaci \\(3^8 \\cdot 3^8\\). Wykonajmy zatem mnożenie.",
+      "solution": "\\(3^8 \\cdot 3^8 = 3^{16}\\)",
+      "order": 3
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 4,
+    "fields": {
+      "exercise": 2,
+      "title": "Przedstawienie pierwiastka w postaci potęgi liczby 7.",
+      "instruction": "Aby wykonać mnożenie potęg liczby muszą być przedstawione jako potęgi o wspólnej podstawie lub wspólnym wykładniku.<br> W naszym przypadku liczby zostaną przedstawione jako potęgi liczby 7. <br> Sprawa jest o tyle prosta, że pierwszy czynnik został przedstawiony jako potęga 7. <br> Przedstawmy więc \\(\\sqrt[3]{7^5}\\) również w postaci potęgi o podstawie 7.",
+      "solution": "\\(\\sqrt[3]{7^5} = 7^{\\frac{5}{3}} \\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 5,
+    "fields": {
+      "exercise": 2,
+      "title": "Mnożenie potęg.",
+      "instruction": "Wyrażenie znajduje się teraz w postaci \\(7^{\\frac{4}{3}} \\cdot 7^{\\frac{5}{3}}\\). Następnym i ostatnim etapem będzie wykonanie mnożenia potęg.",
+      "solution": "\\(7^{\\frac{4}{3}} \\cdot 7^{\\frac{5}{3}} = 7^{\\frac{4}{3}+\\frac{5}{3}} = 7^{\\frac{8}{3}}\\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 6,
+    "fields": {
+      "exercise": 3,
+      "title": "Wykonanie pierwiastkownia odjemnej",
+      "instruction": "Celem naszego zadania jest przedstawienie wyniku odejmowania w postaci potęgi liczby 2. <br> Ponieważ zarówno odjemna, jak i odjemnik zostały przedstawione w postaci pierwiastków, spróbujmy najpierw uprościć wyrażenie. <br> Zacznijmy od wykonania pierwiastkowania pierwszego ze składników.",
+      "solution": "\\(2\\sqrt{50} = 2\\sqrt{2 \\cdot 25} = 2\\sqrt{2} \\cdot \\sqrt{25} = 2\\sqrt{2} \\cdot 5 = 10\\sqrt{2} \\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 7,
+    "fields": {
+      "exercise": 3,
+      "title": "Wykonanie pierwiastkownia odjemnika",
+      "instruction": "Teraz spróbujmy wykonać uproszczenie drugiego ze składników.",
+      "solution": "\\(4\\sqrt{8} = 4\\sqrt{2 \\cdot 4} = 4\\sqrt{2} \\cdot \\sqrt{4} = 4\\sqrt{2} \\cdot 2 = 8\\sqrt{2} \\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 8,
+    "fields": {
+      "exercise": 3,
+      "title": "Wykonanie odejmowania",
+      "instruction": "Nasze wyrażenie po przekszatłceniach znajduje się w następującej postaci: \\(10\\sqrt{2} - 8\\sqrt{2}\\). ",
+      "solution": "\\(10\\sqrt{2} - 8\\sqrt{2} = 2\\sqrt{2} \\)",
+      "order": 3
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 9,
+    "fields": {
+      "exercise": 3,
+      "title": "Przedstawienie pierwiastka w postaci potęgi liczby 2 oraz wykonanie mnożenia",
+      "instruction": "Zacznijmy od przedstawienia pierwiastka w postaci potęgi liczby 2, a następnie wykonajmy mnożenie potęg.",
+      "solution": "\\(2\\sqrt{2} = 2 \\cdot \\sqrt{2} = 2^1 \\cdot 2^{\\frac{1}{2}} = 2^{1 + \\frac{1}{2}} = 2^{\\frac{3}{2}}\\)",
+      "order": 4
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 10,
+    "fields": {
+      "exercise": 4,
+      "title": "Przedstawienie liczby A w postaci potęgi liczby 5",
+      "instruction": "Ponieważ wszystkie z liczb zostały przedstawione jako wyrażenia zawierające liczbę 5 w podstawie, przyjmijmy strategię wyrażenia wszystkich w postaci potęgi liczby 5. <br> Rozpocznijmy od wykonania działań, które pozwolą na wyznaczenie wartości wyrażenia A.",
+      "solution": "\\(A=(5^4)^3 = 5^{4 \\cdot 3} = 5^{12}\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 11,
+    "fields": {
+      "exercise": 4,
+      "title": "Uproszczenie wyrażenia B",
+      "instruction": "W tym przypadku niewiele jesteśmy w stanie zrobić. Wykonajmy możliwe dodawanie, aby otrzymać wartość B.",
+      "solution": "\\(B=5^5 + 5^5 = 2\\cdot(5^5)\\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 12,
+    "fields": {
+      "exercise": 4,
+      "title": "Przedstawienie liczby C w postaci potęgi liczby 5",
+      "instruction": "Wykonajmy działania, które pozwolą na wyznaczenie wartości wyrażenia C.",
+      "solution": "\\(C=5^{12} : 5^7 = 5^{12 - 7} = 5^{5}\\)",
+      "order": 3
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 13,
+    "fields": {
+      "exercise": 4,
+      "title": "Przedstawienie liczby D w postaci potęgi liczby 5",
+      "instruction": "Wykonajmy działania, które pozwolą na wyznaczenie wartości wyrażenia D.",
+      "solution": "\\(D=5^3 : 5^6 = 5^{3 + 6} = 5^{9}\\)",
+      "order": 4
+    }
+  },
+  {
+    "model": "exercises.step",
+    "pk": 14,
+    "fields": {
+      "exercise": 4,
+      "title": "Szeregowanie liczb",
+      "instruction": "Uszeregujmy następujące liczby: \\(A=5^{12}\\), \\(B=2\\cdot(5^5)\\), \\(C=5^{5}\\), \\(D=5^{9}\\)",
+      "solution": "\\(C<B<D<A\\)",
+      "order": 5
+    }
+  }
+]
