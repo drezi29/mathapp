@@ -192,6 +192,12 @@ a:hover {
     height: 55px;
 }
 
+.next-to-button {
+    display: inline-block;
+    position: absolute;
+    right: calc(62%);
+}
+
 .note-text {
     font-size: 20px;
 }
@@ -284,4 +290,23 @@ a:hover {
 
 #main {
   transition: margin-right .3s;
+}
+
+.circle-step {
+    font-size: 26px;
+    color: grey;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+.circle-step-selected {
+    font-size: 26px;
+    color: #4B4EF7;
+    opacity: 90%;
+    text-decoration: none;
+}
+
+.circle-step:hover, .circle-step-selected:hover {
+    color: #FE7062;
+    text-decoration: none;
 }
