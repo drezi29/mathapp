@@ -253,7 +253,7 @@ a:hover {
     top: 0;
     right: 15px;
     font-size: 30px;
-    }
+}
 
 .button-side {
     color: white;
@@ -267,5 +267,21 @@ a:hover {
     overflow-x: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 6px;
+    border-top-left-radius: 6px 6px;
+    border-bottom-left-radius: 6px 6px;
+}
+
+.task-topic a {
+    color: #4B4EF7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.task-topic a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FE7062;
+}
+
+#main {
+  transition: margin-right .3s;
 }
