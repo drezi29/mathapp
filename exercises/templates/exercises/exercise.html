@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block title %} Zadanie - {{ topic.name }} {% endblock %}
 {% block content %}
-    {% load static %}
 <section>
     <div class="container" id="main">
         <div class="row">
-            <div class="col-9 mt-3">
+            <div class="col-9 mt-3 ml-1">
                 <h1 class="task-topic">{{topic.name}}</h1>
                 <div class="button-box">
                     <a class="btn btn-primary next-to-button" href="{% url 'exercises:exercises-list' topic.id %}">Lista zadań</a>
@@ -33,6 +32,14 @@
             </div>
             <div class="col-md-5 d-none d-md-flex">
                 {% include "formula_card.html" %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 ml-1">
+                <h5 class="blue-text">Miejsce na Twoje rozwiązanie:</h5>
+            </div>
+            <div class="col-9 text-center ml-1">
+                {% include "math_input.html" %}
             </div>
         </div>
         <div class="row">

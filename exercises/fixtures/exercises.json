@@ -37,7 +37,7 @@
     "pk": 4,
     "fields": {
       "topic": 2,
-      "exercise_content": "Uszereguj malejąco następujące liczby A=\\((5^4)^3\\), B=\\(5^5\\)+\\(5^5\\), C=\\(5^{12}\\):\\(5^7\\), D=\\(5^3 \\cdot 5^6\\).",
+      "exercise_content": "Uszereguj malejąco następujące liczby A=\\((5^4)^3\\), B=\\(5^5\\)+\\(5^5\\), C=\\(5^{12}\\):\\(5^7\\) oraz D=\\(5^3 \\cdot 5^6\\).",
       "title": "Szeregowanie liczb wyrażonych jako potęgi liczby \\(5\\)",
       "is_extended": false,
       "order": 4

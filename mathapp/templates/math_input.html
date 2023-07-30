@@ -1,0 +1,257 @@
+<div id='keyboard-container'>
+  <math-field
+    id="mf"
+    class="mathfield"
+    style="display: block; font-size: 32px; width: 100%;"
+    virtual-keyboard-mode="manual"
+    ></math-field>
+</div>
+
+<script type="module">
+import '//unpkg.com/mathlive';
+const mf = document.getElementById('mf');
+mf.keybindings = [
+  ...mf.keybindings,
+    {
+        "key": 'shift+[KeyB]',
+        "ifMode": 'math',
+        "command": ['insert', '|{#@}|'],
+    },
+    {
+        "key": 'shift+[KeyG]',
+        "ifMode": 'math',
+        "command": ['insert', '\\lim\\limits_{#@ \\rightarrow \\infty'],
+    },
+    {
+        "key": 'shift+[KeyD]',
+        "ifMode": 'math',
+        "command": ['insert', '\\overline{#@}'],
+    },
+    {
+        "key": 'shift+[KeyS]',
+        "ifMode": 'math',
+        "command": ['insert', '{#@}!'],
+    },
+    {
+        "key": 'shift+[KeyA]',
+        "ifMode": 'math',
+        "command": ['insert','\\binom{#@}{#@}'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyP]',
+        "ifMode": 'math',
+        "command": ['insert','{#@}\'({#@})'],
+    },
+    {
+        "key": 'shift+[KeyL]',
+        "ifMode": 'math',
+        "command": ['insert','\\log_{#@}{#@}'],
+    },
+    {
+        "key": 'shift+[KeyV]',
+        "ifMode": 'math',
+        "command": ['insert','\\sqrt{#@}'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyV]',
+        "ifMode": 'math',
+        "command": ['insert','\\sqrt[{#@}]{#@}'],
+    },
+    {
+        "key": 'shift+[KeyU]',
+        "ifMode": 'math',
+        "command": ['insert','\\frac{#@}{#0}'],
+    },
+    {
+        "key": 'shift+[KeyP]',
+        "ifMode": 'math',
+        "command": ['insert','{#@}^{#@}'],
+    },
+    {
+        "key": 'shift+[KeyI]',
+        "ifMode": 'math',
+        "command": ['insert','{#@}_{#@}'],
+    },
+    {
+        "key": 'shift+[KeyK]',
+        "ifMode": 'math',
+        "command": ['insert','\\measuredangle'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyD]',
+        "ifMode": 'math',
+        "command": ['insert','{#@}^\\circ'],
+    },
+    {
+        "key": 'shift+[KeyZ]',
+        "ifMode": 'math',
+        "command": ['insert','\\emptyset'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyR]',
+        "ifMode": 'math',
+        "command": ['insert','\\parallel'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyJ]',
+        "ifMode": 'math',
+        "command": ['insert','\\bot'],
+    },
+    {
+        "key": 'ctrl+shift+[KeyL]',
+        "ifMode": 'math',
+        "command": ['insert','\\vert'],
+    },
+    {
+        "key": 'shift+[KeyY]',
+        "ifMode": 'math',
+        "command": ['insert','\\subset'],
+    },
+    {
+        "key": 'shift+[KeyX]',
+        "ifMode": 'math',
+        "command": ['insert','\\not\\subset'],
+    },
+    {
+        "key": 'shift+[KeyJ]',
+        "ifMode": 'math',
+        "command": ['insert','\\overrightarrow{#@}'],
+    },
+];
+document.body.style.setProperty("--keyboard-accent-color", "#CB594E");
+document.body.style.setProperty("--keycap-background", "#4B4EF7");
+document.body.style.setProperty("--keycap-background-hover", "#3C3EC5");
+document.body.style.setProperty("--keycap-text", "white");
+document.body.style.setProperty("--keycap-secondary-text", "white");
+document.body.style.setProperty("--keycap-secondary-background", "#3C3EC5");
+document.body.style.setProperty("--keycap-secondary-background-hover", "#2D2E94");
+mathVirtualKeyboard.layouts = [
+{
+  label: 'Symbole podstawowe',
+  rows: [
+    [
+        '[7]',
+        '[8]',
+        '[9]',
+        '[+]',
+        '[separator-5]',
+        { class: 'small', latex: '|{#@}|', aside: 'Shift + B' },
+        { class: 'small', latex: '\\frac{#@}{#0}', aside: 'Shift + U' },
+        { class: 'small', latex: '{#@}^{#@}', aside: 'Shift + P' },
+        { class: 'small', latex: '{#@}_{#@}', aside: 'Shift + I' },
+        { class: 'small', latex: '\\sqrt{#@}', aside: 'Shift + V'},
+        { class: 'small', latex: '\\sqrt[{#@}]{#@}', aside: 'Ctrl + Shift + V'},
+        { class: 'small', latex: '\\log_{#@}{#@}', aside: 'Shift + L'},
+        '[separator]',
+    ],
+    [
+        '[4]',
+        '[5]',
+        '[6]',
+        '[-]',
+        '[separator-5]',
+        '\\lt',
+         { latex: '\\le', aside: '< ='},
+        '[(]',
+        '[)]',
+        { class: 'small', latex: '{#@}!', aside: 'Shift + S'},
+        { class: 'small', latex: '\\binom{#@}{#@}', aside: 'Shift + A'},
+        { class: 'small', latex: '{#@}\'({#@})', aside: 'Ctrl + Shift + P'},
+        '[separator]',
+    ],
+    [
+        '[1]',
+        '[2]',
+        '[3]',
+        {latex: '\\cdot}'},
+        '[separator-5]',
+        '\\gt',
+        { latex: '\\ge', aside: '> ='},
+        '[',
+        ']',
+        { class: 'small', latex: '\\lim\\limits_{#@ \\rightarrow \\infty}', aside: 'Shift + G'},
+        { label: '[backspace]', width: 2 },
+        '[separator]',
+    ],
+    [
+        '[0]',
+        '[.]',
+        ',',
+        '\\colon',
+        '[separator-5]',
+        '=',
+        { latex: '\\ne', aside: '! ='},
+        '\\lbrace',
+        '\\rbrace',
+        { latex: '\\overline{#@}', aside: 'Shift + D' },
+        '[left]',
+        '[right]',
+        '[separator]',
+    ],
+  ],
+},
+{
+  label: 'Geometria, trygonometria, zbiory',
+  rows: [
+    [
+         { latex: '\\sin', aside: 'sin'},
+         { latex: '\\Delta', aside: 'Detla'},
+         { latex: '\\alpha', aside: 'alpha'},
+         { latex: '\\beta', aside: 'beta'},
+         { latex: '\\gamma', aside: 'gamma'},
+         { latex: '\\delta', aside: 'delta'},
+         { latex: '\\epsilon', aside: 'epsilon'},
+        '[separator-5]',
+        { latex: '\\bot', aside: 'Ctrl + Shift + J'},
+        { latex: '\\parallel', aside: 'Ctrl + Shift + R'},
+        { latex: '\\cap', aside: 'nn'},
+        { latex: '\\cup', aside: 'uu'},
+        { latex: '\\mathbb{N}', aside: 'NN'},
+        { latex: '\\emptyset', aside: 'Shift + Z'},
+        { latex: '\\infty', aside: 'oo'},
+        '[separator]',
+    ],
+    [
+        { latex: '\\cos', aside: 'cos'},
+        { latex: '\\Psi', aside: 'Psi'},
+        { latex: '\\eta', aside: 'eta'},
+        { latex: '\\theta', aside: 'theta'},
+        { latex: '\\lambda', aside: 'lambda'},
+        { latex: '\\mu', aside: 'mu'},
+        { latex: '\\pi', aside: 'pi'},
+        '[separator-5]',
+        { latex: '\\vert', aside: 'Ctrl + Shift + L'},
+        { latex: '\\measuredangle', aside: 'Shift + K'},
+        { latex: '\\in', aside: 'in'},
+        { latex: '\\notin', aside: '!in'},
+        { latex: '\\mathbb{C}', aside: 'CC'},
+        { label: '[backspace]', width: 2 },
+        '[separator]',
+    ],
+    [
+        { latex: '\\tan', aside: 'tan'},
+        { latex: '\\Omega', aside: 'Omega'},
+        { latex: '\\rho', aside: 'rho'},
+        { latex: '\\sigma', aside: 'sigma'},
+        { latex: '\\tau', aside: 'tau'},
+        { latex: '\\varphi', aside: 'varphi'},
+        { latex: '\\omega', aside: 'omega'},
+        '[separator-5]',
+        { latex: '\\overrightarrow{#@}', aside: 'Shift + J'},
+        { latex: '\\subset', aside: 'Shift + Y'},
+        { latex: '\\not\\subset', aside: 'Shift + X'},
+        { latex: '{#@}^\\circ', aside: 'Ctrl + Shift + D'},
+         { latex: '\\mathbb{R}', aside: 'RR'},
+        '[left]',
+        '[right]',
+        '[separator]',
+    ],
+  ],
+},
+];
+
+mf?.addEventListener('math-error', (ev) =>
+console.log('Error :' + ev.detail.code)
+);
+
+</script>

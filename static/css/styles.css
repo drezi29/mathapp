@@ -225,7 +225,7 @@ a:hover {
 }
 
 .formula-sidepanel {
-    height: 70%;
+    height: 55%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -310,3 +310,24 @@ a:hover {
     color: #FE7062;
     text-decoration: none;
 }
+
+.mathfield {
+    font-size: 32px;
+}
+
+.math-field:not(:defined) {
+    visibility: hidden;
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.math {
+    display: none;
+}
+
