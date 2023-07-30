@@ -210,18 +210,11 @@ a:hover {
     border-width: 1px;
     border-radius: 12px;
     font-size: 24px;
-    background-color: #91B3FA;
-    border-color: #91B3FA;
+    background-color: #4B4EF7;
+    border-color: #4B4EF7;
     color:white;
     text-align: center;
     padding: 60px 0;
-}
-
-.formula-tile:hover {
-    color:white;
-    transform: scale(1.05);
-    box-shadow: 4px 4px #FE7062;
-    border: #FE7062;
 }
 
 .formula-sidepanel {
