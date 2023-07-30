@@ -9,7 +9,7 @@ class ExerciseListView(View):
     def get(self, request, pk):
         topic = Topic.objects.get(id=pk)
         exercises = Exercise.objects.filter(topic=pk).order_by('order')
-        return render(request, 'exercises/exercise-list.html', {"exercises": exercises, "topic": topic})
+        return render(request, 'exercises/exercise-list.html', {"exercises": exercises, "topic": topic, "exercises_amount": len(exercises)})
 
 
 def exercise_view(request, pk):

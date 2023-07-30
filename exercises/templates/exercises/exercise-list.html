@@ -4,20 +4,25 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="mt-3 mb-3 col-12 offset-lg-2">
-                <h2 class="section-header">{{ topic.name }}</h2></div>
+            <div class="mt-5 mb-3 col-12">
+                <h1 class="blue-text">{{ topic.name }}</h1>
             </div>
-        <div class="row justify-content-lg-center offset-lg-2">
-            {% for exercise in exercises%}
-                <div class="col-12 ml-xs-4 ml-md-2 my-2">
-                    <a class="topic-name" href="{% url 'exercises:exercise-detail' exercise.id %}">
-                        {% if exercise.is_extended %}★
-                        {% else %}☆
-                        {% endif %}
-                        {{exercise.title}}
-                    </a>
+            {% if exercises_amount == 0 %}
+                <div class="col-12">
+                    <p>Zadania w przygotowaniu.</p>
                 </div>
-            {% endfor %}
+            {% else %}
+                {% for exercise in exercises%}
+                    <div class="col-12 ml-xs-4 ml-md-2 my-2">
+                        <a class="topic-name" href="{% url 'exercises:exercise-detail' exercise.id %}">
+                            {% if exercise.is_extended %}★
+                            {% else %}☆
+                            {% endif %}
+                            {{exercise.title}}
+                        </a>
+                    </div>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </section>

@@ -4,10 +4,11 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="mt-3 mb-3 col-12 offset-lg-2">
-                <h2 class="section-header">{{object.name}}</h2></div>
+            <div class="mt-5 mb-2 col-12 ">
+                <h1 class="section-header">{{object.name}}</h1>
             </div>
-        <div class="row justify-content-lg-center">
+        </div>
+        <div class="row">
             {% for topic in chapter.topic_set.all %}
                 <div class="ml-lg-3 col-xs-12 col-lg-5">
                     <a class="topic-name" href="{% url 'notes:note-detail' topic.id %}">

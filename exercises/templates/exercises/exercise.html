@@ -4,8 +4,10 @@
 <section>
     <div class="container" id="main">
         <div class="row">
+            <div class="mt-2 mb-2 col-12 ">
+                <h1 class="blue-text">{{topic.name}}</h1>
+            </div>
             <div class="col-9 mt-3 ml-1">
-                <h1 class="task-topic">{{topic.name}}</h1>
                 <div class="button-box">
                     <a class="btn btn-primary next-to-button" href="{% url 'exercises:exercises-list' topic.id %}">Lista zadań</a>
                     <a class="btn btn-primary" href="{% url 'notes:note-detail' topic.id %}">Notatki z tematu</a>

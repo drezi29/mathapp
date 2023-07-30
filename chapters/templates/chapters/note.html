@@ -3,40 +3,36 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-12 mt-5 mx-4 mx-sm-5">
-                {% for element in note_elements %}
-                    <div>
-                        <div class="text-left mb-3 blue-text">
-                            <h2>{{ element.name }}</h2>
-                        </div>
-                        <div class="text-left p-sm-3 mx-sm-5">
-                        {% if element.text %}
-                            {{element.text|safe}}
-                        {% endif %}
-                        {% if element.image %}
-                        <img src="{{ element.image.url }}" alt="img">
-                        {% endif %}
-                        <div class="my-5">
-                            {% if element.file %}
-                            <video width="640px" height="360px" controls>
-                                 <source src="{{ element.file.url }}" type="video/mp4">
-                            </video>
-                            {% endif %}
-                        </div>
-                        </div>
-                    </div>
-                {% endfor%}
+            <div class="col-12 mt-5 mb-3">
+                 <h1 class="blue-text">{{ note.topic.name }}</h1>
             </div>
-            <div class="col-12 mt-3">
-                <div class="button-box row">
-                        <div class="col-6" style="text-align: right;">
-                            <a href="{% url 'register' %}" class="button btn btn-primary ml-2">Zadania związane z tematem</a>
+            <div class="col-12">
+                {% if elements_amount == 0 %}
+                    <p>Treść w przygotowaniu.</p>
+                {% else %}
+                    {% for element in note_elements %}
+                        <div>
+                            <div class="text-left mb-3 blue-text">
+                                <h2>{{ element.name }}</h2>
+                            </div>
+                            <div class="text-left p-sm-3 mx-sm-5">
+                            {% if element.text %}
+                                {{element.text|safe}}
+                            {% endif %}
+                            {% if element.image %}
+                            <img src="{{ element.image.url }}" alt="img">
+                            {% endif %}
+                            <div class="my-5">
+                                {% if element.file %}
+                                <video width="640px" height="360px" controls>
+                                     <source src="{{ element.file.url }}" type="video/mp4">
+                                </video>
+                                {% endif %}
+                            </div>
+                            </div>
                         </div>
-                        <div class="col-6" style="text-align: left;">
-                            <a href="{% url 'quizzes:quiz-start' topic_id %}" class="button btn btn-primary ml-2">Test wiedzy z tematu</a>
-                        </div>
-                        </div>
-                    </div>
+                    {% endfor%}
+                {% endif %}
             </div>
         </div>
     </div>
