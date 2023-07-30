@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 from django.views import View
 from django.urls import reverse
@@ -7,6 +8,7 @@ from .models import Answer
 from .models import Quiz
 
 
+@login_required
 def quiz_result(request):
     score = request.session['score']
     questions_amount = request.session['questions_amount']
@@ -14,6 +16,7 @@ def quiz_result(request):
     return render(request, 'quizzes/results.html', {'score': score, 'questions_amount': questions_amount, 'incorrect_responses': incorrect_responses.items()})
 
 
+@login_required
 def render_quiz(request, pk):
     topic = Topic.objects.get(id=pk)
     quiz = Quiz.objects.get(topic=pk)
