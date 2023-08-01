@@ -195,7 +195,6 @@ a:hover {
 .next-to-button {
     display: inline-block;
     position: absolute;
-    right: calc(62%);
 }
 
 .note-text {

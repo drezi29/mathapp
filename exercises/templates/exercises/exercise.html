@@ -10,7 +10,8 @@
             <div class="col-9 mt-3 ml-1">
                 <div class="button-box">
                     <a class="btn btn-primary next-to-button" href="{% url 'exercises:exercises-list' topic.id %}">Lista zadań</a>
-                    <a class="btn btn-primary" href="{% url 'notes:note-detail' topic.id %}">Notatki z tematu</a>
+                    <a class="btn btn-primary next-to-button" style="left: calc(150px);" href="{% url 'notes:note-detail' topic.id %}">Notatki</a>
+                    <a class="btn btn-primary next-to-button" style="left: calc(250px);" href="{% url 'quizzes:quiz-start' topic.id %}">Test</a>
                 </div>
             </div>
         </div>

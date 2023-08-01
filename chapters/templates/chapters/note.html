@@ -6,6 +6,15 @@
             <div class="col-12 mt-5 mb-3">
                  <h1 class="blue-text">{{ note.topic.name }}</h1>
             </div>
+            <div class="col-12 mb-3">
+                <div class="button-box">
+                    <a class="btn btn-primary next-to-button" href="{% url 'chapters:chapter-detail' chapter_id %}">Lista tematów</a>
+                    {% if elements_amount != 0 %}
+                    <a class="btn btn-primary next-to-button" style="left: calc(175px);" href="{% url 'exercises:exercises-list' topic_id %}">Zadania</a>
+                    <a class="btn btn-primary next-to-button" style="left: calc(280px);" href="{% url 'quizzes:quiz-start' topic_id %}">Test</a>
+                    {% endif %}
+                </div>
+            </div>
             <div class="col-12">
                 {% if elements_amount == 0 %}
                     <p>Treść w przygotowaniu.</p>

@@ -6,6 +6,9 @@
         <div class="row">
             <div class="mt-5 mb-3 col-12">
                 <h1 class="blue-text">{{ topic.name }}</h1>
+                <div class="button-box mt-3">
+                    <a class="btn btn-primary" href="{% url 'chapters:chapter-detail' topic.chapter.id %}">Lista tematów</a>
+                </div>
             </div>
             {% if exercises_amount == 0 %}
                 <div class="col-12">
