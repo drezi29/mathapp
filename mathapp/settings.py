@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'nested_admin',
     'chapters',
     'exercises',
+    'formulas',
     'landing_page',
     'notes',
     'quizzes',
