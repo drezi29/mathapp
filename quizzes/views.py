@@ -3,9 +3,9 @@ from django.shortcuts import redirect, render
 from django.views import View
 from django.urls import reverse
 from .forms import QuizForm
+from .models import Answer, Quiz
 from chapters.models import Topic
-from .models import Answer
-from .models import Quiz
+from formulas.models import Title, FormulaNote
 
 
 @login_required
@@ -20,6 +20,7 @@ def quiz_result(request):
 def render_quiz(request, pk):
     topic = Topic.objects.get(id=pk)
     quiz = Quiz.objects.get(topic=pk)
+    formula_chapters = Title.objects.all()
     form = QuizForm(questions=quiz.question_set.all())
     if request.method == 'POST':
         post_data = request.POST
@@ -43,7 +44,7 @@ def render_quiz(request, pk):
         request.session['questions_amount'] = len(quiz.question_set.all())
         request.session['incorrect_responses'] = incorrect_responses
         return redirect('/quiz/result')
-    return render(request, 'quizzes/quiz.html', {'topic': topic, 'form': form})
+    return render(request, 'quizzes/quiz.html', {'topic': topic, 'form': form, 'formula_chapters': formula_chapters})
 
 
 class StartQuizView(View):
