@@ -1,0 +1,29 @@
+[
+  {
+    "model": "formulas.formulanote",
+    "pk": 1,
+    "fields": {
+      "title": 1,
+      "note": "Wartość bezwzględną liczby rzeczywistej \\(x\\) definiujemy wzorem: <br> |x| = \\(\\{ {x \\atop -x=0} \\) \\(\\textrm{dla} \\: x \\geq 0 \\atop \\textrm{dla} \\: x < 0\\) <br> Liczba \\(|x|\\) jest to odległość na osi liczbowej punktu \\(x\\) o punktu 0.",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 2,
+    "fields": {
+      "title": 1,
+      "note": "Dla dowolnej \\(x\\) liczby mamy: <br> \\(|x| \\geq 0\\) <br> \\(|x| = 0\\) wtedy i tylko wtedy, gdy x=0 <br> \\(|-x| = |x|\\) <br> Dla dowolnych liczb rzeczywistych \\(x, y\\) mamy: <br> \\(|x+y| \\leq |x|+|y|\\) <br> \\(|x-y| \\leq |x|+|y|\\) <br> \\(|x \\cdot |y| = |x|\\cdot |y|\\) <br> Ponadto jeśli \\(y \\neq 0\\) to: <br> \\(|\\frac{x}{y}|=\\frac{|x|}{|y|}\\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 3,
+    "fields": {
+      "title": 1,
+      "note": "Dla dowolnych liczb rzeczywistych \\(a\\) oraz \\(r \\geq 0\\) mamy: <br> \\(|x-a| \\leq r\\) wtedy i tylko wtedy, gdy \\(a-r \\leq x \\leq a+r\\) <br> \\(|x-a| \\geq r\\) wtedy i tylko wtedy, gdy \\(x \\leq a-r\\) lub \\(x \\geq a+r\\)",
+      "order": 3
+    }
+  }
+]

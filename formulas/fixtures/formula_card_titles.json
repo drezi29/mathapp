@@ -1,0 +1,138 @@
+[
+  {
+    "model": "formulas.title",
+    "pk": 1,
+    "fields": {
+      "title": "Wartość bezwzględna liczby",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 2,
+    "fields": {
+      "title": "Potęgi i pierwiastki",
+      "order": 2
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 3,
+    "fields": {
+      "title": "Logarytmy",
+      "order": 3
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 4,
+    "fields": {
+      "title": "Silnia. Współczynnik dwumianowy",
+      "order": 4
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 5,
+    "fields": {
+      "title": "Wzór dwumianowy Newtona",
+      "order": 5
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 6,
+    "fields": {
+      "title": "Wzory skróconego mnożenia",
+      "order": 6
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 7,
+    "fields": {
+      "title": "Funkcja kwadratowa",
+      "order": 7
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 8,
+    "fields": {
+      "title": "Ciągi",
+      "order": 8
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 9,
+    "fields": {
+      "title": "Trygonometria",
+      "order": 9
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 10,
+    "fields": {
+      "title": "Planimetria",
+      "order": 10
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 11,
+    "fields": {
+      "title": "Geometria analityczna na płaszczyźnie kartezjańskiej",
+      "order": 11
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 12,
+    "fields": {
+      "title": "Stereometria",
+      "order": 12
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 13,
+    "fields": {
+      "title": "Kombinatoryka",
+      "order": 13
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 14,
+    "fields": {
+      "title": "Rachunek prawdopodobieństwa",
+      "order": 14
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 15,
+    "fields": {
+      "title": "Parametry danych statystycznych",
+      "order": 15
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 16,
+    "fields": {
+      "title": "Pochodna funkcji",
+      "order": 16
+    }
+  },
+  {
+    "model": "formulas.title",
+    "pk": 17,
+    "fields": {
+      "title": "Tabela wartości funkcji trygonometrycznych",
+      "order": 17
+    }
+  }
+]

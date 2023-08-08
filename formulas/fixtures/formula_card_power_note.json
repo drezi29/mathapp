@@ -1,0 +1,38 @@
+[
+  {
+    "model": "formulas.formulanote",
+    "pk": 4,
+    "fields": {
+      "title": 2,
+      "note": "Niech \\(n\\) będzie liczbą całkowitą dodatnią. Dla dowolnej liczby rzeczywistej \\(a\\) definiujemy jej \\(n\\textrm{-tą}\\) potęgę:<br> \\(a^n = \\underbrace{a \\cdot a \\cdot \\ldots \\cdot a}_{\\textrm{$n$ razy}} \\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 5,
+    "fields": {
+      "title": 2,
+      "note": "Pierwiastkiem arytmetycznym \\(\\sqrt[n]{a}\\) stopnia n z liczby \\(a \\geq 0\\) nazywamy liczbę \\(b \\geq 0\\) taką, że \\(b^n=a\\). <br> W szczególności dla każdej liczny rzeczywistej \\(a\\) prawdziwa jest równość:<br> \\(\\sqrt{a^2} = |a|\\) <br> Jeżeli \\(a<0\\) oraz liczba \\(n\\) jest nieparzysta, to \\(\\sqrt[n]{a}\\) oznacza liczbę \\(b<0\\) taką, że \\(b^n=a\\).<br> W zbiorze liczb rzeczywistych pierwiastki stopni parzystych z liczb ujemnych nie istnieją.",
+      "order": 2
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 6,
+    "fields": {
+      "title": 2,
+      "note": "Niech \\(m, n\\) będą liczbami całkowitymi dodatnimi. Definiujemy:<br> - dla \\(a \\neq 0\\): \\(a^{-n}=\\frac{1}{a^n}\\) oraz \\(a^0 = 1\\)<br> - dla \\(a \\geq 0\\): \\(a^{\\frac{m}{n}} = \\sqrt[n]{m}\\)<br> - dla \\(a > 0\\): \\(a^\\frac{-m}{n} \\) \\(=\\)\\(\\frac{1}{\\sqrt[n]{a^m}}\\)",
+      "order": 3
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 7,
+    "fields": {
+      "title": 2,
+      "note": "Niech \\(r,s\\) będą dowolnymi liczby rzeczywistymi. Jeśli \\(a>0\\) i \\(b>0\\) to:<br> \\(a^r \\cdot a^s = a^{r+s}\\)<br> \\((a^r)^s=a^{r \\cdot s}\\)<br> \\(\\frac{a^r}{a^s}=a^{r-s}\\)<br> \\((a \\cdot b)^r = a^r \\cdot b^r\\)<br> \\((\\frac{a}{b})^r = \\frac{a^r}{b^r}\\)<br> Jeżeli wykładniki \\(r, s\\) są liczbami całkowitymi, to powyższe wzory obowiązują dla wszystkich liczb \\(a \\neq 0\\) i \\(b \\neq 0\\).",
+      "order": 4
+    }
+  }
+]
