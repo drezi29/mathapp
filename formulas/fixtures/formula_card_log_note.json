@@ -1,0 +1,38 @@
+[
+  {
+    "model": "formulas.formulanote",
+    "pk": 8,
+    "fields": {
+      "title": 3,
+      "note": "Niech \\(a>0\\) i \\(a \\neq 1\\). Logarytmem \\(\\log_{a}{b}\\) liczby \\(b>0\\) przy podstawie \\(a\\) nazywamy wykładnik \\(c\\) potęgi, do której należy podnieść \\(a\\), aby otrzymać \\(b\\): <br> \\(\\log_{a}{b} = c\\)  wtedy i tylko wtedy, gdy \\(a^c = b\\). <br> Równoważnie: <br> \\(a^{\\log_{a}{b}} = b\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 9,
+    "fields": {
+      "title": 3,
+      "note": "Dla dowolnych liczb rzeczywistych \\(x>0\\), \\(y>0\\) oraz \\(r\\) prawdziwe są równości: <br> \\(\\log_{a}{(x \\cdot y)} = \\log_{a}{x} + \\log_{a}{y}\\) <br> \\(\\log_{a}{x^r} = r \\cdot \\log_{a}{x}\\) <br> \\(\\log_{a}{\\frac{x}{y}} = \\log_{a}{x} - \\log_{a}{y} \\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 10,
+    "fields": {
+      "title": 3,
+      "note": "Wzór na zamianę postawy logarytmu: <br> jeżeli \\(a>0\\), \\(a \\neq 1\\), \\(b>0\\), \\(b \\neq 1\\) oraz \\(c>0\\), to <br> \\(\\log_{b}{c} = \\frac{\\log_{a}{c}}{\\log_{a}{b}}\\) <br> W szczególności <br> \\(\\log_{a}{b} = \\frac{1}{\\log_{b}{a}}\\)",
+      "order": 3
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 11,
+    "fields": {
+      "title": 3,
+      "note": "Zapisy \\(\\log_{x}\\) oraz \\(lg_{x}\\) oznaczają \\(\\log_{10}{x}\\).",
+      "order": 4
+    }
+  }
+]

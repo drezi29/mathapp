@@ -1,0 +1,20 @@
+[
+  {
+    "model": "formulas.formulanote",
+    "pk": 15,
+    "fields": {
+      "title": 5,
+      "note": "Dla dowolnej liczby całkowitej dodatniej \\(n\\) oraz dla dowolnych liczb rzeczywistych \\(a\\), \\(b\\) mamy: <br> \\((a+b)^n = \\binom{n}{0} a^n + \\binom{n}{1} a^{n-1}b + \\) <br><br> \\(+ \\ldots + \\binom{n}{k} a^{n-k}b^k + \\ldots + \\) <br><br> \\( +\\binom{n}{n-1} ab^{n-1} + \\binom{n}{n}b^n\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 16,
+    "fields": {
+      "title": 5,
+      "note": "Dla dowolnej liczby całkowitej dodatniej \\(n\\) oraz dla dowolnych liczb rzeczywistych \\(a\\), \\(b\\) mamy: <br> \\((a-b)^n = \\binom{n}{0} a^n - \\binom{n}{1} a^{n-1}b + \\) <br><br> \\(+ \\ldots + (-1)^k\\binom{n}{k} a^{n-k}b^k + \\ldots + \\) <br><br> \\( + (-1)^n\\binom{n}{n} b^{n} \\)",
+      "order": 2
+    }
+  }
+]

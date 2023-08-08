@@ -1,0 +1,29 @@
+[
+  {
+    "model": "formulas.formulanote",
+    "pk": 12,
+    "fields": {
+      "title": 4,
+      "note": "Silnią liczby całkowitej dodatniej \\(n\\) nazywamy iloczyn kolejnych liczb całkowitych od 1 do \\(n\\) włącznie: <br> \\(n! = 1 \\cdot 2 \\cdot \\ldots \\cdot n \\) <br> Ponadto przyjmujemy umowę, że \\(0! = 1\\). <br> Dla dowolnej liczby całkowitej \\(n \\geq 0\\) prawdziwa jest równość: <br> \\((n+1)! = n! \\cdot (n+1)\\)",
+      "order": 1
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 13,
+    "fields": {
+      "title": 4,
+      "note": "Dla liczb całkowitych \\(n\\), \\(k\\) spełniających warunki \\(0 \\leq k \\leq n\\) definiujemy współczynnik dwumianowy \\(\\binom{n}{k}\\) (symbol Newtona): <br> \\(\\binom{n}{k}=\\frac{n!}{k!(n-k)!}\\)",
+      "order": 2
+    }
+  },
+  {
+    "model": "formulas.formulanote",
+    "pk": 14,
+    "fields": {
+      "title": 4,
+      "note": "Prawdziwe są równości: <br> \\(\\binom{n}{k} = \\frac{n(n-1)(n-2) \\cdot \\ldots \\cdot (n-k+1)}{k!} \\) <br> \\(\\binom{n}{0} = 1 \\) <br> \\(\\binom{n}{1} = n\\) <br> \\(\\binom{n}{n-1} = n \\) <br> \\(\\binom{n}{n} = 1 \\) <br> \\(\\binom{n}{k} = \\binom{n}{n-k} \\) <br> \\(\\binom{n}{k} + \\binom{n}{k+1} = \\binom{n+1}{k+1} \\)",
+      "order": 3
+    }
+  }
+]
