@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-30 19:31+0200\n"
+"POT-Creation-Date: 2023-08-08 17:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,7 @@ msgstr ""
 
 #: .\chapters\models\chapter.py:10 .\chapters\models\topic.py:12
 #: .\exercises\models\exercise.py:14 .\exercises\models\step.py:14
+#: .\formulas\models\formula_note.py:10 .\formulas\models\title.py:8
 #: .\notes\models\note_element.py:22
 msgid "order"
 msgstr "kolejność"
@@ -181,11 +182,70 @@ msgstr "krok"
 msgid "steps"
 msgstr "kroki"
 
-#: .\mathapp\settings.py:115
+#: .\formulas\apps.py:7
+msgid "Formulas"
+msgstr "Wzory"
+
+#: .\formulas\models\formula_note.py:7 .\formulas\models\title.py:15
+#, fuzzy
+#| msgid "step title"
+msgid "title"
+msgstr "tytuł kroku"
+
+#: .\formulas\models\formula_note.py:8
+#, fuzzy
+#| msgid "The topic to which the note is linked"
+msgid "The chapter of formula card to which the formula note is linked"
+msgstr "Tytuł w karcie wzorów, z którym notatka ze wzorem jest powiązana"
+
+#: .\formulas\models\formula_note.py:9 .\formulas\models\formula_note.py:21
+msgid "formula note"
+msgstr "notatka ze wzorem"
+
+#: .\formulas\models\formula_note.py:9
+msgid "Provide note for formula card chapter"
+msgstr "Wpisz notatkę dla rozdziału w karcie wzorów"
+
+#: .\formulas\models\formula_note.py:11
+#, fuzzy
+#| msgid ""
+#| "The value determines the order of topics in chapter's table of content"
+msgid "The value determines the order of notes in formula's chapter view"
+msgstr "Wartość określa kolejność notatek ze wzorami w rozdziale karty wzorów"
+
+#: .\formulas\models\formula_note.py:22
+msgid "formula notes"
+msgstr "notatki ze wzorem"
+
+#: .\formulas\models\title.py:6
+msgid "formulas' scope title"
+msgstr "tytuł rozdziału karty wzorów"
+
+#: .\formulas\models\title.py:7
+#, fuzzy
+#| msgid "Resource title for the administrator purpose of management"
+msgid "Title visible as chapter in formula's card"
+msgstr ""
+"Tytuł rozdziału w karcie wzorów"
+
+#: .\formulas\models\title.py:9
+#, fuzzy
+#| msgid ""
+#| "The value determines the order of topics in chapter's table of content"
+msgid "The value determines the order of chapters in formulas's card view"
+msgstr "Wartość określa kolejność rozdziałów w widoku karty wzorów"
+
+#: .\formulas\models\title.py:16
+#, fuzzy
+#| msgid "step title"
+msgid "titles"
+msgstr "tytuł kroku"
+
+#: .\mathapp\settings.py:119
 msgid "Polish"
 msgstr "Polski"
 
-#: .\mathapp\settings.py:116
+#: .\mathapp\settings.py:120
 msgid "English"
 msgstr "Angielski"
 
@@ -212,7 +272,7 @@ msgstr "Notatka, z którą element notatki jest powiązany"
 #: .\notes\models\note_element.py:11
 msgid "Resource title for the administrator purpose of management"
 msgstr ""
-"Tytuł zasobu nadawany w celach łatwiejszego zarządzania w panelu admina"
+"Tytuł zasobu widoczny jako tytuł tekstu w notatce oraz nadawany w celach łatwiejszego zarządzania w panelu admina"
 
 #: .\notes\models\note_element.py:12
 msgid "description"
