@@ -3,19 +3,31 @@
 {% block content %}
 <section id="chapters">
   <div class="container">
-    <div class="col-md-12"></div>
+  <div class="col-md-12 mt-5" style="padding: 0px;"><h1 class="blue-text">Spis rozdziałów</h1></div>
+    <div class="col-9 mt-3">
+        <div class="button-box">
+            <a class="next-to-button" style="font-size: 20px; margin-top: 16px;">Legenda:</a>
+            <a class="chapter-button next-to-button" style="color: white!important; padding: 10px!important; height: 48px!important; left: calc(110px);">Poziom podstawowy</a>
+            <a class="chapter-button-reverse next-to-button" style="color: white!important; padding: 10px!important; height: 48px!important; left: calc(320px);">Poziom rozszerzony</a>
+        </div>
+    </div>
     {% for class in classes_section %}
     <div class="row">
-      <div class="col-md-12 mt-5 mb-2"><h2 class="section-header">Klasa {{class}}</h2></div>
+      <div class="col-md-12 mt-4 mb-2"><h2 class="section-header">Klasa {{class}}</h2></div>
         {% for chapter in chapters %}
           {% if chapter.program_class == class %}
           <div class="col-xl-4">
             <a href="{% url 'chapters:chapter-detail' chapter.id %}">
-            <div class="chapter-button">
-                {% if chapter.is_extended %}★
-                {% else %}☆
+                {% if chapter.is_extended %}
+                    <div class="chapter-button-reverse">{{ chapter.name }}</div>
+                {% else %}
+                    <div class="chapter-button">{{ chapter.name }}</div>
                 {% endif %}
-                {{ chapter.name }}</div>
+{#{% if chapter.is_extended %}#}
+{#                    <div class="chapter-button-reverse">★ {{ chapter.name }}</div>#}
+{#                {% else %}#}
+{#                    <div class="chapter-button">☆{{ chapter.name }}</div>#}
+{#                {% endif %}#}
             </a>
             </div>
           {%endif%}

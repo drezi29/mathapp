@@ -55,6 +55,24 @@ footer {
     border: #FE7062;
 }
 
+.chapter-button-reverse {
+    width: auto;
+    height: 80px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #FE7062;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter-button-reverse:hover {
+    scale:1.05;
+    box-shadow: 7px 7px #4B4EF7;
+    border: #4B4EF7;
+}
+
 .btn-svg {
     background-color: #4B4EF7;
     border-color: #4B4EF7;
@@ -63,7 +81,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 40px;
 
 }
@@ -101,6 +121,16 @@ a:hover {
 
 .blue-text {
     color: #4B4EF7!important;
+    font-weight: 600;
+}
+
+.red-text {
+    color: red!important;
+    font-weight: 600;
+}
+
+.green-text {
+    color: forestgreen!important;
     font-weight: 600;
 }
 
@@ -323,3 +353,6 @@ code {
     display: none;
 }
 
+.tooltip-inner {
+    white-space:pre-wrap;
+}

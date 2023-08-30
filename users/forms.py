@@ -11,9 +11,9 @@ class CustomUserCreationForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
 
-    username = forms.CharField(label='Nazwa użytkownika', min_length=3, max_length=50, help_text=(''))
+    username = forms.CharField(label='Nazwa użytkownika', min_length=3, max_length=50)
     email = forms.EmailField(label='Adres e-mail')
-    password1 = forms.CharField(label='Podaj hasło', widget=forms.PasswordInput)
+    password1 = forms.CharField(label='Podaj hasło', widget=forms.PasswordInput, help_text=('Hasło musi zawierać przynajmniej 8 znaków, w tym litery, cyfry i znaki specjalne'))
     password2 = forms.CharField(label='Powtórz hasło', widget=forms.PasswordInput)
 
     def clean_email(self):

@@ -13,7 +13,8 @@ def quiz_result(request):
     score = request.session['score']
     questions_amount = request.session['questions_amount']
     incorrect_responses = request.session['incorrect_responses']
-    return render(request, 'quizzes/results.html', {'score': score, 'questions_amount': questions_amount, 'incorrect_responses': incorrect_responses.items()})
+    user_responses = request.session['user_responses']
+    return render(request, 'quizzes/results.html', {'score': score, 'questions_amount': questions_amount, 'incorrect_responses': incorrect_responses.items(), 'user_responses': user_responses.items()})
 
 
 @login_required
@@ -26,12 +27,16 @@ def render_quiz(request, pk):
         post_data = request.POST
         score_counter = 0
         incorrect_responses = {}
+        user_responses = {}
         for question in quiz.question_set.all():
             answers = question.answer_set.all()
             answered_correctly = False
             answer_content = ''
             for answer in answers:
                 answered_correctly = False
+                if not answer.is_correct:
+                    if answer.id == int(post_data[str(question.id)]):
+                        user_responses[question.question_content] = answer.answer_content
                 if answer.is_correct:
                     answer_content = answer.answer_content
                     if answer.id == int(post_data[str(question.id)]):
@@ -43,6 +48,7 @@ def render_quiz(request, pk):
         request.session['score'] = score_counter
         request.session['questions_amount'] = len(quiz.question_set.all())
         request.session['incorrect_responses'] = incorrect_responses
+        request.session['user_responses'] = user_responses
         return redirect('/quiz/result')
     return render(request, 'quizzes/quiz.html', {'topic': topic, 'form': form, 'formula_chapters': formula_chapters})
 
