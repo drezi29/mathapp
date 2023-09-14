@@ -1,10 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
-from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
+from django.views.generic.list import ListView
+
+from .chapter_constans import (CLASS, EXERCISES, INDEX_OF_CHAPTERS,
+                               INDEX_OF_TOPICS, LEGEND, LVL_ADVANCED,
+                               LVL_BASIC, NOTES, TEST)
 from .models import Chapter
-from .chapter_constans import CLASS, EXERCISES, INDEX_OF_CHAPTERS, INDEX_OF_TOPICS, LEGEND, LVL_ADVANCED, LVL_BASIC, NOTES, TEST
 
 
 class ChapterListView(ListView):
