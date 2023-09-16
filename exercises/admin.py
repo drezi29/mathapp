@@ -1,5 +1,6 @@
 import nested_admin
 from django.contrib import admin
+
 from .models import Exercise, Step
 
 
@@ -12,7 +13,7 @@ admin.site.register(Step, StepAdmin)
 
 class StepInline(nested_admin.NestedStackedInline):
     model = Step
-    sortable_field_name = "title"
+    sortable_field_name = 'title'
 
 
 class ExerciseAdmin(nested_admin.NestedModelAdmin):

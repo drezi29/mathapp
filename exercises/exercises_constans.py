@@ -5,4 +5,3 @@ LIST_OF_EXERCISES = _('List of exercises')
 SHOW_SOLUTION = _('Show solution')
 STEP = _('Step')
 PLACE_FOR_SOLUTION = _('Place for your solution')
-
