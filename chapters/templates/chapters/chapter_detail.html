@@ -1,24 +1,24 @@
 {% extends "base.html" %}
-{% block title %} {{object.name}} {% endblock %}
+{% block title %} {{ object.name }} {% endblock title %}
 {% block content %}
 <section>
     <div class="container">
         <div class="row">
             <div class="mt-5 mb-4 col-12">
                 <h1 class="blue-text">{{ index_of_topics }}</h1>
-                <h3 class="blue-text">{{object.name}}</h3>
+                <h3 class="blue-text">{{ object.name }}</h3>
             </div>
         </div>
         <div class="row">
             {% for topic in chapter.topic_set.all %}
                 <div class="ml-lg-3 col-xs-12 col-lg-5">
                         {% if topic.is_extended %}
-                            <span style="background-color: #FE7062!important; color:white;" class="badge bg-primary">R</span>
+                            <span class="badge badge-mine-red text-white">R</span>
                         {% else %}
-                            <span style="background-color: #4B4EF7!important; color:white;" class="badge bg-primary">P</span>
+                            <span class="badge badge-mine-blue text-white">P</span>
                         {% endif %}
                 <a class="topic-name" href="{% url 'notes:note-detail' topic.id %}">
-                        {{topic.name}}
+                        {{ topic.name }}
                     </a>
                 </div>
 
@@ -40,7 +40,7 @@
                             </svg><span class="ml-1">{{ exercises }}</span>
                         </span>
                     </a>
-                    <a href="{% url 'quizzes:quiz-start' topic.id %}" id="tests" class="tests ml-2 mb-5" data-toggle="tooltip" title={{ test }}>
+                    <a href="{% url 'quiz-start' topic.id %}" id="tests" class="tests ml-2 mb-5" data-toggle="tooltip" title={{ test }}>
                         <span class="btn-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
                                 <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
@@ -66,7 +66,7 @@
                             </svg>
                         </span>
                     </a>
-                    <a href="{% url 'quizzes:quiz-start' topic.id %}" id="tests" class="tests ml-2 mb-5" data-toggle="modal" data-target="#contentForAuthenticatedUsersModal" title="Test">
+                    <a href="{% url 'quiz-start' topic.id %}" id="tests" class="tests ml-2 mb-5" data-toggle="modal" data-target="#contentForAuthenticatedUsersModal" title="Test">
                         <span class="btn-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
                                 <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
@@ -79,4 +79,4 @@
         </div>
     </div>
 </section>
-{% endblock %}
+{% endblock content %}
