@@ -5,5 +5,5 @@ def landing_page(request):
     return render(request, 'landing_page/home.html')
 
 
-def credits(request):
+def credits_page(request):
     return render(request, 'landing_page/credits.html')
