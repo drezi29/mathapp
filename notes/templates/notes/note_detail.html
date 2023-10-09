@@ -1,17 +1,17 @@
 {% extends "base.html" %}
-{% block title %} {{note}} {% endblock %}
+{% block title %} {{ object }} {% endblock title %}
 {% block content %}
     <div class="container">
         <div class="row">
             <div class="col-12 mt-5 mb-3">
-                 <h1 class="blue-text">{{ note.topic.name }}</h1>
+                 <h1 class="blue-text">{{ object.topic.name }}</h1>
             </div>
             <div class="col-12 mb-3">
                 <div class="button-box">
-                    <a class="btn btn-primary next-to-button" href="{% url 'chapters:chapter-detail' chapter_id %}">{{ index_of_topics }}</a>
+                    <a class="btn btn-primary" href="{% url 'chapters:chapter-detail' chapter_id %}">{{ index_of_topics }}</a>
                     {% if elements_amount != 0 %}
-                    <a class="btn btn-primary next-to-button" style="left: calc(175px);" href="{% url 'exercises:exercises-list' topic_id %}">{{ exercises }}</a>
-                    <a class="btn btn-primary next-to-button" style="left: calc(280px);" href="{% url 'quizzes:quiz-start' topic_id %}">{{ test }}</a>
+                    <a class="btn btn-primary" href="{% url 'exercises:exercises-list' %}?topic={{ topic.id }}">{{ exercises }}</a>
+                    <a class="btn btn-primary" href="{% url 'quizzes:quiz-start' topic_id %}">{{ test }}</a>
                     {% endif %}
                 </div>
             </div>
@@ -26,23 +26,23 @@
                             </div>
                             <div class="text-left p-sm-3 mx-sm-5">
                             {% if element.text %}
-                                {{element.text|safe}}
+                                {{ element.text|safe }}
                             {% endif %}
                             {% if element.image %}
-                            <img src="{{ element.image.url }}" alt="img">
+                            <img src="{{ element.image.url }}" alt="img" height="{{ element.image.height_field }}" width="{{ element.image.width_field }}/>
                             {% endif %}
                             <div class="my-5">
                                 {% if element.file %}
                                 <video width="640px" height="360px" controls>
-                                     <source src="{{ element.file.url }}" type="video/mp4">
+                                     <source src="{{ element.file.url }}" type="video/mp4"/>
                                 </video>
                                 {% endif %}
                             </div>
                             </div>
                         </div>
-                    {% endfor%}
+                    {% endfor %}
                 {% endif %}
             </div>
         </div>
     </div>
-{% endblock %}
+{% endblock content %}
