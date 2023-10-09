@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} {{ list_of_exercises }} - {{ topic.name }} {% endblock %}
+{% block title %} {{ list_of_exercises }} - {{ topic.name }} {% endblock title %}
 {% block content %}
 <section>
     <div class="container">
@@ -15,13 +15,13 @@
                     <p>{{ content_in_preparation }}</p>
                 </div>
             {% else %}
-                {% for exercise in exercises%}
+                {% for exercise in exercises %}
                     <div class="col-12 ml-xs-4 ml-md-2 my-2">
                         <a class="topic-name" href="{% url 'exercises:exercise-detail' exercise.id %}">
                             {% if exercise.is_extended %}★
                             {% else %}☆
                             {% endif %}
-                            {{exercise.title}}
+                            {{ exercise.title }}
                         </a>
                     </div>
                 {% endfor %}
@@ -29,4 +29,4 @@
         </div>
     </div>
 </section>
-{% endblock %}
+{% endblock content %}

@@ -1,17 +1,17 @@
 {% extends "base.html" %}
-{% block title %} {{ exercise_const }} - {{ topic.name }} {% endblock %}
+{% block title %} {{ exercise_const }} - {{ topic.name }} {% endblock title %}
 {% block content %}
 <section>
     <div class="container" id="main">
         <div class="row">
             <div class="mt-2 mb-2 col-12 ">
-                <h1 class="blue-text">{{topic.name}}</h1>
+                <h1 class="blue-text">{{ topic.name }}</h1>
             </div>
             <div class="col-9 mt-3 ml-1">
                 <div class="button-box">
-                    <a class="btn btn-primary next-to-button" href="{% url 'exercises:exercises-list' topic.id %}">{{ list_of_exercises }}</a>
-                    <a class="btn btn-primary next-to-button" style="left: calc(150px);" href="{% url 'notes:note-detail' topic.id %}">{{ notes_const }}</a>
-                    <a class="btn btn-primary next-to-button" style="left: calc(250px);" href="{% url 'quizzes:quiz-start' topic.id %}">{{ test_const }}</a>
+                    <a class="btn btn-primary" href="{% url 'exercises:exercises-list' %}?topic={{ topic.id }}">{{ list_of_exercises }}</a>
+                    <a class="btn btn-primary" href="{% url 'notes:note-detail' topic.id %}">{{ notes_const }}</a>
+                    <a class="btn btn-primary" href="{% url 'quizzes:quiz-start' topic.id %}">{{ test_const }}</a>
                 </div>
             </div>
         </div>
@@ -22,13 +22,13 @@
                     <h5><a class="blue-text">{{ step_const }} {{ steps.number }}: </a> {{ step.instruction|safe }} </h5>
                 {% endfor %}
 
-                <div style="text-align: center;" class="my-2">
+                <div class="my-2 centered-text">
                 {% for step in steps.paginator.page_range %}
                     {{ num_page }}
                     {% if steps.number == step %}
-                        <a href="?page={{ forloop.counter }}" class="circle-step-selected">&#11044;</a>
+                        <a href="?page={{ forloop.counter }}" class="circle-step-selected">⬤</a>
                     {% else %}
-                        <a href="?page={{ forloop.counter }}" class="circle-step">&#11044;</a>
+                        <a href="?page={{ forloop.counter }}" class="circle-step">⬤</a>
                     {% endif %}
                 {% endfor %}
                 </div>
@@ -63,4 +63,4 @@
         </div>
     </div>
 </section>
-{% endblock %}
+{% endblock content %}
