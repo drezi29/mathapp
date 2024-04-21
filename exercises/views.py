@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404
-from django.views.generic.detail import BaseDetailView, DetailView
-from django.views.generic.list import BaseListView, ListView
+from django.views.generic.detail import DetailView
+from django.views.generic.list import ListView
 
 from chapters.chapter_constans import (
     CONTENT_IN_PREPARATION,
@@ -22,16 +22,7 @@ from .exercises_constans import (
 from .models import Exercise
 
 
-class ExercisesBaseListView(BaseListView):
-    def get_context_data(self, **kwargs):
-        context = super(ExercisesBaseListView, self).get_context_data(**kwargs)
-        context['list_of_exercises'] = LIST_OF_EXERCISES
-        context['index_of_topics'] = INDEX_OF_TOPICS
-        context['content_in_preparation'] = CONTENT_IN_PREPARATION
-        return context
-
-
-class ExercisesListView(ExercisesBaseListView, ListView):
+class ExercisesListView(ListView):
     model = Exercise
 
     def get_context_data(self, **kwargs):
@@ -42,23 +33,13 @@ class ExercisesListView(ExercisesBaseListView, ListView):
         context['exercises'] = queryset
         context['topic'] = topic
         context['exercises_amount'] = len(queryset)
-        return context
-
-
-class ExerciseBaseDetailView(BaseDetailView):
-    def get_context_data(self, **kwargs):
-        context = super(ExerciseBaseDetailView, self).get_context_data(**kwargs)
-        context['test_const'] = TEST
-        context['notes_const'] = NOTES
-        context['step_const'] = STEP
         context['list_of_exercises'] = LIST_OF_EXERCISES
-        context['place_for_solution'] = PLACE_FOR_SOLUTION
-        context['show_solution'] = SHOW_SOLUTION
-        context['exercise_const'] = EXERCISE
+        context['index_of_topics'] = INDEX_OF_TOPICS
+        context['content_in_preparation'] = CONTENT_IN_PREPARATION
         return context
 
 
-class ExerciseDetailView(ExerciseBaseDetailView, DetailView):
+class ExerciseDetailView(DetailView):
     model = Exercise
     formula_chapters = Title.objects.all()
 
@@ -67,6 +48,13 @@ class ExerciseDetailView(ExerciseBaseDetailView, DetailView):
         context['formula_chapters'] = self.formula_chapters
         context['topic'] = Topic.objects.get(id=self.object.topic.id)
         context['steps'] = self.get_related_steps()
+        context['test_const'] = TEST
+        context['notes_const'] = NOTES
+        context['step_const'] = STEP
+        context['list_of_exercises'] = LIST_OF_EXERCISES
+        context['place_for_solution'] = PLACE_FOR_SOLUTION
+        context['show_solution'] = SHOW_SOLUTION
+        context['exercise_const'] = EXERCISE
         return context
 
     def get_related_steps(self):
