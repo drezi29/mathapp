@@ -23,3 +23,4 @@ class Title(models.Model):
     class Meta:
         verbose_name = _('title')
         verbose_name_plural = _('titles')
+        app_label = 'title'
