@@ -34,4 +34,4 @@ class FormulaNote(models.Model):
         ]
         verbose_name = _('formula note')
         verbose_name_plural = _('formula notes')
-        app_name = 'formula_note'
+        app_label = 'formula_note'
