@@ -1,25 +1,19 @@
 {% extends "base.html" %}
-{% block title %} {{ index_of_chapters }} {% endblock %}
+{% block title %} Spis rozdziałów {% endblock %}
 {% block content %}
 <section id="chapters">
   <div class="container">
-  <div class="col-md-12 mt-5" style="padding: 0px;"><h1 class="blue-text">{{ index_of_chapters }}</h1></div>
+  <div class="col-md-12 mt-5" style="padding: 0px;"><h1 class="blue-text">Spis rozdziałów</h1></div>
     <div class="col-9 mt-3">
         <div class="button-box">
-            <div class="button-box row">
-                <a class="col-1 mr-4" style="font-size: 20px; margin-top: 16px;">{{ legend }}:</a>
-                <div class="col-4">
-                    <a class="chapter-button">{{ lvl_basic }}</a>
-                </div>
-                <div class="col-4">
-                    <a class="chapter-button-reverse">{{ lvl_advanced }}</a>
-                </div>
-            </div>
+            <a class="next-to-button" style="font-size: 20px; margin-top: 16px;">Legenda:</a>
+            <a class="chapter-button next-to-button" style="color: white!important; padding: 10px!important; height: 48px!important; left: calc(110px);">Poziom podstawowy</a>
+            <a class="chapter-button-reverse next-to-button" style="color: white!important; padding: 10px!important; height: 48px!important; left: calc(320px);">Poziom rozszerzony</a>
         </div>
     </div>
     {% for class in classes_section %}
     <div class="row">
-      <div class="col-md-12 mt-4 mb-2"><h2 class="section-header">{{ class_const }} {{class}}</h2></div>
+      <div class="col-md-12 mt-4 mb-2"><h2 class="section-header">Klasa {{class}}</h2></div>
         {% for chapter in chapters %}
           {% if chapter.program_class == class %}
           <div class="col-xl-4">
@@ -29,12 +23,17 @@
                 {% else %}
                     <div class="chapter-button">{{ chapter.name }}</div>
                 {% endif %}
+{#{% if chapter.is_extended %}#}
+{#                    <div class="chapter-button-reverse">★ {{ chapter.name }}</div>#}
+{#                {% else %}#}
+{#                    <div class="chapter-button">☆{{ chapter.name }}</div>#}
+{#                {% endif %}#}
             </a>
             </div>
           {%endif%}
         {% endfor %}
     </div>
     {% endfor %}
-  </div>
+  </div> 
 </section>
 {% endblock %}

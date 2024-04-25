@@ -31,7 +31,7 @@ footer {
 .custom-toggler.navbar-toggler {
     border-color: #150A81;
 }
-
+ 
 .custom-toggler .navbar-toggler-icon {
     background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(46, 54, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -39,11 +39,11 @@ footer {
 
 .chapter-button {
     width: auto;
-    height: 50px;
+    height: 80px;
     margin: 10px;
     border-radius: 12px;
     background-color: #4B4EF7;
-    color:white!important;
+    color:white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +57,11 @@ footer {
 
 .chapter-button-reverse {
     width: auto;
-    height: 50px;
+    height: 80px;
     margin: 10px;
     border-radius: 12px;
     background-color: #FE7062;
-    color:white!important;
+    color:white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ a:hover {
 .button-box {
     overflow: hidden;
     width: 100%;
-    height: 70px;
+    height: 55px;
 }
 
 .next-to-button {
@@ -355,12 +355,4 @@ code {
 
 .tooltip-inner {
     white-space:pre-wrap;
-}
-
-.badge-mine-blue {
-    background-color: #4B4EF7!important;
-}
-
-.badge-mine-red {
-    background-color: #FE7062!important;
 }

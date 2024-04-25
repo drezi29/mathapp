@@ -1,17 +1,17 @@
 {% extends "base.html" %}
-{% block title %} {{ exercise_const }} - {{ topic.name }} {% endblock title %}
+{% block title %} Zadanie - {{ topic.name }} {% endblock %}
 {% block content %}
 <section>
     <div class="container" id="main">
         <div class="row">
             <div class="mt-2 mb-2 col-12 ">
-                <h1 class="blue-text">{{ topic.name }}</h1>
+                <h1 class="blue-text">{{topic.name}}</h1>
             </div>
             <div class="col-9 mt-3 ml-1">
                 <div class="button-box">
-                    <a class="btn btn-primary" href="{% url 'exercises:exercises-list' %}?topic={{ topic.id }}">{{ list_of_exercises }}</a>
-                    <a class="btn btn-primary" href="{% url 'notes:note-detail' topic.id %}">{{ notes_const }}</a>
-                    <a class="btn btn-primary" href="{% url 'quizzes:quiz-start' topic.id %}">{{ test_const }}</a>
+                    <a class="btn btn-primary next-to-button" href="{% url 'exercises:exercises-list' topic.id %}">Lista zadań</a>
+                    <a class="btn btn-primary next-to-button" style="left: calc(150px);" href="{% url 'notes:note-detail' topic.id %}">Notatki</a>
+                    <a class="btn btn-primary next-to-button" style="left: calc(250px);" href="{% url 'quizzes:quiz-start' topic.id %}">Test</a>
                 </div>
             </div>
         </div>
@@ -19,16 +19,16 @@
             <div class="col-9 mt-3 mb-4 card card-body ml-1">
                 <h4>{{ exercise.exercise_content }}</h4>
                 {% for step in steps %}
-                    <h5><a class="blue-text">{{ step_const }} {{ steps.number }}: </a> {{ step.instruction|safe }} </h5>
+                    <h5><a class="blue-text">Krok {{ steps.number }}: </a> {{ step.instruction|safe }} </h5>
                 {% endfor %}
 
-                <div class="my-2 centered-text">
+                <div style="text-align: center;" class="my-2">
                 {% for step in steps.paginator.page_range %}
                     {{ num_page }}
                     {% if steps.number == step %}
-                        <a href="?page={{ forloop.counter }}" class="circle-step-selected">⬤</a>
+                        <a href="?page={{ forloop.counter }}" class="circle-step-selected">&#11044;</a>
                     {% else %}
-                        <a href="?page={{ forloop.counter }}" class="circle-step">⬤</a>
+                        <a href="?page={{ forloop.counter }}" class="circle-step">&#11044;</a>
                     {% endif %}
                 {% endfor %}
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <div class="col-9 ml-1">
-                <h5 class="blue-text">{{ place_for_solution }}</h5>
+                <h5 class="blue-text">Miejsce na Twoje rozwiązanie:</h5>
             </div>
             <div class="col-9 text-center ml-1">
                 {% include "math_input.html" %}
@@ -49,7 +49,7 @@
             <div class="col-9 mt-4 ml-1">
                 <div class="button-box">
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSolution" aria-expanded="false" aria-controls="collapseExample">
-                        {{ show_solution }}
+                        Pokaż rozwiązanie
                     </button>
                 </div>
                 <div class="collapse" id="collapseSolution">
@@ -63,4 +63,4 @@
         </div>
     </div>
 </section>
-{% endblock content %}
+{% endblock %}
