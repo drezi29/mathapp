@@ -13,37 +13,26 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.contrib import admin
+from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from django.urls import include, path
-
 from landing_page import views as landing_views
 from users import views as users_views
+from quizzes import views as quiz_views
 
-urlpatterns = (
-    [
-        path('admin/', admin.site.urls),
-        path('', include(('chapters.urls', 'chapters'), namespace='chapters')),
-        path('', include(('exercises.urls', 'exercises'), namespace='exercises')),
-        path('', include(('notes.urls', 'notes'), namespace='notes')),
-        path('', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
-        path('', landing_views.landing_page, name='home_page'),
-        path('_nested_admin/', include('nested_admin.urls')),
-        path('credits/', landing_views.credits_page, name='credits'),
-        path('register/', users_views.RegisterView.as_view(), name='register'),
-        path(
-            'login/',
-            auth_views.LoginView.as_view(template_name='users/login.html'),
-            name='login',
-        ),
-        path(
-            'logout/',
-            auth_views.LogoutView.as_view(template_name='users/logout.html'),
-            name='logout',
-        ),
-    ]
-    + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-)
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('chapters/', include(('chapters.urls', 'chapters'), namespace='chapters')),
+    path('exercises/', include(('exercises.urls', 'exercises'), namespace='exercises')),
+    path('notes/', include(('notes.urls', 'notes'), namespace='notes')),
+    path('quizzes/', include(('quizzes.urls', 'quizzes'), namespace='quizzes')),
+    path('_nested_admin/', include('nested_admin.urls')),
+    path('', landing_views.landing_page, name='home_page'),
+    path('credits/', landing_views.credits, name='credits'),
+    path('register/', users_views.register, name='register'),
+    path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
+    path('quiz/result', quiz_views.quiz_result, name='quiz-result'),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

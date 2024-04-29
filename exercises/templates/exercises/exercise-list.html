@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} {{ list_of_exercises }} - {{ topic.name }} {% endblock title %}
+{% block title %} Lista zadań - {{ topic.name }} {% endblock %}
 {% block content %}
 <section>
     <div class="container">
@@ -7,21 +7,21 @@
             <div class="mt-5 mb-3 col-12">
                 <h1 class="blue-text">{{ topic.name }}</h1>
                 <div class="button-box mt-3">
-                    <a class="btn btn-primary" href="{% url 'chapters:chapter-detail' topic.chapter.id %}">{{ index_of_topics }}</a>
+                    <a class="btn btn-primary" href="{% url 'chapters:chapter-detail' topic.chapter.id %}">Lista tematów</a>
                 </div>
             </div>
             {% if exercises_amount == 0 %}
                 <div class="col-12">
-                    <p>{{ content_in_preparation }}</p>
+                    <p>Zadania w przygotowaniu.</p>
                 </div>
             {% else %}
-                {% for exercise in exercises %}
+                {% for exercise in exercises%}
                     <div class="col-12 ml-xs-4 ml-md-2 my-2">
                         <a class="topic-name" href="{% url 'exercises:exercise-detail' exercise.id %}">
                             {% if exercise.is_extended %}★
                             {% else %}☆
                             {% endif %}
-                            {{ exercise.title }}
+                            {{exercise.title}}
                         </a>
                     </div>
                 {% endfor %}
@@ -29,4 +29,4 @@
         </div>
     </div>
 </section>
-{% endblock content %}
+{% endblock %}
