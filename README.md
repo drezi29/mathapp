@@ -89,11 +89,11 @@ Start the Django development server:
 python manage.py runserver
 ```
 
-Now, you should be able to access the MathApp application by navigating to `http://localhost:8000` in your web browser.
+Now, you should be able to access the MathApp application by navigating to [http://localhost:8000](http://localhost:8000) in your web browser.
 
 ## User Registration
 
-To register a new user, navigate to `http://localhost:8000` and follow the registration prompts.
+To register a new user, navigate to [http://localhost:8000](http://localhost:8000) and follow the registration prompts.
 
 ## Admin Access
 
