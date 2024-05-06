@@ -2,6 +2,8 @@
 
 MathApp is a Django-based web application that provides math learning materials for high school. It uses a PostgreSQL database for data storage.
 
+<video src="https://github.com/drezi29/mathapp/assets/105422077/f4f4bbbf-8436-451e-acef-ee9d5dbe0a9e"></video>
+
 ## Local Setup
 
 Follow these steps to set up and run MathApp locally:
