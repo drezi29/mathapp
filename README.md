@@ -80,9 +80,12 @@ python manage.py migrate
 
 ### 7. Load Initial Data
 
-Load the initial data into the database:
+Load the initial data into the database by executing `load_data.sh` file:
 
-TODO - Add instructions for loading initial data
+```bash
+./load_data.sh
+```
+
 ### 8. Run the Django Development Server
 
 Start the Django development server:
