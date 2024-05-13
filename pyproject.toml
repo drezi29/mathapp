@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathapp"
+version = "0.1.0"
+description = "MathApp is a Django-based web application that provides math learning materials for high school students"
+long_description = "file: README.md"
+
+author = "Julia Drężek"
+author_email = "jul.drezek@gmail.com"
+
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Education",
+  "Topic :: Education",
+  "Programming Language :: Python :: 3.10",
+  "Framework :: Django :: 4.1"
+]
+
+keywords = "mathematics, maths, learning, high school"
+
+packages = ["your_package"]
+
+install_requires = [
+  "Django==4.1",
+  "django-nested-admin==4.0.2",
+  "Pillow==9.3.0",
+  "psycopg2==2.9.9"
+]
+
+[project.urls]
+"Source" = "https://github.com/drezi29/mathapp"
