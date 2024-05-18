@@ -2,6 +2,8 @@
 
 MathApp is a Django-based web application that provides math learning materials for high school. It uses a PostgreSQL database for data storage.
 
+<video src="https://github.com/drezi29/mathapp/assets/105422077/f4f4bbbf-8436-451e-acef-ee9d5dbe0a9e"></video>
+
 ## Local Setup
 
 Follow these steps to set up and run MathApp locally:
@@ -78,9 +80,12 @@ python manage.py migrate
 
 ### 7. Load Initial Data
 
-Load the initial data into the database:
+Load the initial data into the database by executing `load_data.sh` file:
 
-TODO - Add instructions for loading initial data
+```bash
+./load_data.sh
+```
+
 ### 8. Run the Django Development Server
 
 Start the Django development server:
